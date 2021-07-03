@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e88f1b5.chunk.css",
-    "main.js": "/static/js/main.9eed2a1e.chunk.js",
-    "main.js.map": "/static/js/main.9eed2a1e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.38ac0b02.js",
-    "runtime-main.js.map": "/static/js/runtime-main.38ac0b02.js.map",
-    "static/js/2.78e81809.chunk.js": "/static/js/2.78e81809.chunk.js",
-    "static/js/2.78e81809.chunk.js.map": "/static/js/2.78e81809.chunk.js.map",
-    "static/js/3.0865c963.chunk.js": "/static/js/3.0865c963.chunk.js",
-    "static/js/3.0865c963.chunk.js.map": "/static/js/3.0865c963.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.3e88f1b5.chunk.css.map": "/static/css/main.3e88f1b5.chunk.css.map",
-    "static/js/2.78e81809.chunk.js.LICENSE.txt": "/static/js/2.78e81809.chunk.js.LICENSE.txt"
+    "main.css": "/gcaa-issue-20th-anniversary/static/css/main.3e88f1b5.chunk.css",
+    "main.js": "/gcaa-issue-20th-anniversary/static/js/main.9eed2a1e.chunk.js",
+    "main.js.map": "/gcaa-issue-20th-anniversary/static/js/main.9eed2a1e.chunk.js.map",
+    "runtime-main.js": "/gcaa-issue-20th-anniversary/static/js/runtime-main.29696d87.js",
+    "runtime-main.js.map": "/gcaa-issue-20th-anniversary/static/js/runtime-main.29696d87.js.map",
+    "static/js/2.78e81809.chunk.js": "/gcaa-issue-20th-anniversary/static/js/2.78e81809.chunk.js",
+    "static/js/2.78e81809.chunk.js.map": "/gcaa-issue-20th-anniversary/static/js/2.78e81809.chunk.js.map",
+    "static/js/3.0865c963.chunk.js": "/gcaa-issue-20th-anniversary/static/js/3.0865c963.chunk.js",
+    "static/js/3.0865c963.chunk.js.map": "/gcaa-issue-20th-anniversary/static/js/3.0865c963.chunk.js.map",
+    "index.html": "/gcaa-issue-20th-anniversary/index.html",
+    "static/css/main.3e88f1b5.chunk.css.map": "/gcaa-issue-20th-anniversary/static/css/main.3e88f1b5.chunk.css.map",
+    "static/js/2.78e81809.chunk.js.LICENSE.txt": "/gcaa-issue-20th-anniversary/static/js/2.78e81809.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.38ac0b02.js",
+    "static/js/runtime-main.29696d87.js",
     "static/js/2.78e81809.chunk.js",
     "static/css/main.3e88f1b5.chunk.css",
     "static/js/main.9eed2a1e.chunk.js"
