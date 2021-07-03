@@ -1,10 +1,13 @@
 function Speak1() {
   return ({
-    title: `啟蒙與實踐：我們與台灣環境運動交會的生命軌跡`,
-    subtitle: `從 80 年代走來 林聖崇、林瓊華 對談環運人生`,
-    content: content
+    title : `啟蒙與實踐：我們與台灣環境運動交會的生命軌跡`,
+    subtitle : `從 80 年代走來 林聖崇、林瓊華 對談環運人生`,
+    content : content,
+    speakers : speakers,
   })
 }
+
+const speakers = `林聖崇、林瓊華`
 
 const content = `
 「每個人都是在一起學習，人生就是這樣學習過

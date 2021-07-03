@@ -1,10 +1,13 @@
 function Speak2() {
   return ({
-    title: `如何從草根中學習？`,
-    subtitle: `公益、生態、社會的漫長追尋`,
-    content: content
+    title:  `如何從草根中學習？`,
+    subtitle : `公益、生態、社會的漫長追尋`,
+    content : content,
+    speakers : speakers,
   })
 }
+
+const speakers = `張則周`
 
 const content = `
 「大家都希望台灣變成讓人尊重、值得驕傲的國家，

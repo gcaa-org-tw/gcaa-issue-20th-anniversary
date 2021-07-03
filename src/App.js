@@ -11,13 +11,13 @@ import './App.scss';
 class Navbar extends Component {
   render() {
     return (
-      <div class="mdc-layout-grid__cell navbar">
+      <div class="mdc-layout-grid">
         <ul>
           <li>
             <Link to="/speaks/enlightenment-and-practice">系列講座</Link>
           </li>
           <li>
-            <Link to="/musical">音樂會</Link>
+            <Link to="/musical">綠盟 20 週年感恩音樂會</Link>
           </li>
         </ul>
       </div>
@@ -28,26 +28,20 @@ class Navbar extends Component {
 function App() {
   return (
     <Router>
-      <div class="mdc-layout-grid">
+      <div class="container">
         <Route path="/" exact>
           <Home />
         </Route>
         <Route path="/:path">
-          <div class="mdc-layout-grid__inner">
+          <div class="container">
             <Navbar/>
           </div>
 
-          <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell--span-12">
-              <Switch>
-                <Route path="/musical">
-                  <About />
-                </Route>
-                <Route path="/speaks">
-                  <Speaks />
-                </Route>
-              </Switch>
-            </div>
+          <div class="container">
+            <Switch>
+              <Route path="/musical"><About /></Route>
+              <Route path="/speaks"><Speaks /></Route>
+            </Switch>
           </div>
         </Route>
       </div>

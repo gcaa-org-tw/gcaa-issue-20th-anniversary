@@ -39,8 +39,8 @@ class MarkdownSpeak extends Component {
 class NavMenuSpeaks extends Component {
   render() {
     return (
-      <div class="mdc-layout-grid__cell--span-3">
-        <h2>系列講座</h2>
+      <div>
+        <h3>系列講座</h3>
         <div class="navmenu speaks">
           <ul>
           <li>
@@ -68,29 +68,36 @@ function Speaks() {
   let match = useRouteMatch();
   
   return (
-    <div class="mdc-layout-grid__inner">
-      <div class="mdc-layout-grid__cell--span-12">
-        <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell--span-12 title">
-            <Switch>
-            <Route path={`${match.path}/:speakId`}>
-              <PageSpeakTitle />
-              </Route>
-            </Switch>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <Switch>
+        <Route path={`${match.path}/:speakId`}>
+          <div class="col-md-auto">
+            <PageSpeakTitle />
           </div>
-        </div>
-        <div class="mdc-layout-grid__inner">
+          </Route>
+        </Switch>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-2">
           <NavMenuSpeaks match={match.url}/>
-          <div class="mdc-layout-grid__cell--span-6">
-            <Switch>
-            <Route path={`${match.path}/:speakId`}>
-                <PageSpeak />
-            </Route>
-            <Route path={match.path}>
-                <h3>Please select a topic.</h3>
-            </Route>
-            </Switch>
-          </div>
+        </div>
+        <div class="col-6">
+          <Switch>
+          <Route path={`${match.path}/:speakId`}>
+              <PageSpeakContent />
+          </Route>
+          {/* <Route path={match.path}>
+              <h3>Please select a topic.</h3>
+            </Route> */}
+          </Switch>
+        </div>
+        <div class="col-2">
+          <Switch>
+          <Route path={`${match.path}/:speakId`}>
+            <PageSpeakers />
+          </Route>
+          </Switch>
         </div>
       </div>
     </div>
@@ -107,14 +114,14 @@ function PageSpeakTitle() {
   let title = getMarkdownContent(speakId).title
   let subtitle = getMarkdownContent(speakId).subtitle
   return (
-    <div>
+    <div class="container headline">
       <h1>{ title }</h1>
       <h2>{ subtitle }</h2>
     </div>
   )
 }
 
-function PageSpeak() {
+function PageSpeakContent() {
   let { speakId } = useParams();
   let content = getMarkdownContent(speakId).content
   return (
@@ -124,6 +131,16 @@ function PageSpeak() {
         <MarkdownSpeak content={content} />
     </div>
   );
+}
+
+function PageSpeakers() {
+  let { speakId } = useParams()
+  let speakers = getMarkdownContent(speakId).speakers
+  return(
+    <div>
+      { speakers }
+    </div>
+  )
 }
 
 export default Speaks;

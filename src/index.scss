@@ -4,11 +4,13 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FDF6EA;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Serif TC', serif;
   color: $primary;
+  padding-bottom: 0.5em;
 }
 
 h1 {
