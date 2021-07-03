@@ -1,9 +1,10 @@
 function Speak1() {
   return ({
-    title : `啟蒙與實踐：我們與台灣環境運動交會的生命軌跡`,
+    title : `我們與台灣環境運動交會的生命軌跡`,
     subtitle : `從 80 年代走來 林聖崇、林瓊華 對談環運人生`,
     content : content,
     speakers : speakers,
+    imgsrc : 'https://images.unsplash.com/photo-1625153010802-4f34d6c5fc17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
   })
 }
 

@@ -4,6 +4,7 @@ function Speak2() {
     subtitle : `公益、生態、社會的漫長追尋`,
     content : content,
     speakers : speakers,
+    imgsrc : 'https://images.unsplash.com/photo-1625008383174-2c22592a3c67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1316&q=80',
   })
 }
 

@@ -16,8 +16,8 @@ class NavItemSpeak extends Component {
     return (
       <Link to={`${this.props.url}`}>
         <div>
-          <span class="spead-id">{ this.props.speakId }</span>
-          { this.props.title }
+          <span class="speak-id number">{ this.props.speakId }</span>
+          <div class="speak-id">{ this.props.title }</div>
         </div>
       </Link>
     )
@@ -69,20 +69,27 @@ function Speaks() {
   
   return (
     <div class="container">
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-center align-items-center">
         <Switch>
         <Route path={`${match.path}/:speakId`}>
-          <div class="col-md-auto">
+          <div class="col-6 col-md-8">
             <PageSpeakTitle />
           </div>
           </Route>
         </Switch>
       </div>
-      <div class="row justify-content-md-center">
-        <div class="col-2">
+      <div class="row justify-content-center align-items-center">
+        <Switch>
+        <Route path={`${match.path}/:speakId`}>
+          <PageSpeakLandingImg />
+        </Route>
+        </Switch>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-md-2 col-sm-4">
           <NavMenuSpeaks match={match.url}/>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-8">
           <Switch>
           <Route path={`${match.path}/:speakId`}>
               <PageSpeakContent />
@@ -92,7 +99,7 @@ function Speaks() {
             </Route> */}
           </Switch>
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-sm-4">
           <Switch>
           <Route path={`${match.path}/:speakId`}>
             <PageSpeakers />
@@ -118,6 +125,23 @@ function PageSpeakTitle() {
       <h1>{ title }</h1>
       <h2>{ subtitle }</h2>
     </div>
+  )
+}
+
+function PageSpeakLandingImg() {
+  let { speakId } = useParams()
+  let imgUrl = getMarkdownContent(speakId).imgsrc
+  const style = {
+    backgroundImage: 'url(' + imgUrl + ')',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat', 
+    backgroundPosition: '50%',     
+    width: '100%',
+    minHeight: '60vh',
+    marginBottom: '2em',
+  };  
+  return (
+    <div class="container landing-img" style={style}></div>
   )
 }
 

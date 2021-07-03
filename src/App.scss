@@ -7,14 +7,16 @@ $primary: #532F16;
     margin: 0;
     padding: 0;
   }
-  .spead-id {
-    color: grey;
-    font-size: 2em;
-    font-style: italic;
+  .speak-id {
     display: inline-block;
-    width: 1em;
-    padding: 5px;
-    font-weight: 400;
+    &.number {
+      color: grey;
+      font-size: 2em;
+      font-style: italic;
+      width: 1em;
+      padding: 5px;
+      font-weight: 400;
+    }
   }
 }
 
@@ -26,4 +28,9 @@ $primary: #532F16;
 .content {
   text-align: justify;
   line-height: 2em;
+}
+
+.landing-img {
+  max-height: 60vh;
+  background-size: contain;
 }
