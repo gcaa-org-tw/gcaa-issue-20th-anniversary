@@ -1,6 +1,11 @@
-const content = `# 如何從草根中學習？
+function Speak2() {
+  return ({
+    title: '如何從草根中學習？',
+    content: content
+  })
+}
 
-## 公益、生態、社會的漫長追尋
+const content = `## 公益、生態、社會的漫長追尋
 
 「大家都希望台灣變成讓人尊重、值得驕傲的國家，
 但經過這些年的努力，我們離目標還有多遠?」
@@ -11,9 +16,5 @@ const content = `# 如何從草根中學習？
 願意團結，願意參與改革，這要靠著教育與終生
 學習來達成。
 `
-
-function Speak2() {
-  return content
-}
 
 export default Speak2

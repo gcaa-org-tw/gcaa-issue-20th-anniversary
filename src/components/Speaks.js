@@ -1,26 +1,67 @@
 import React, { Component } from 'react'
 import ReactMarkdown from 'react-markdown';
 import {
-    Switch,
-    Route,
-    Link,
-    useRouteMatch,
-    useParams
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
 } from "react-router-dom";
 
 import Speak1 from './speaks/Speak1'
 import Speak2 from './speaks/Speak2'
 
+class NavItemSpeak extends Component {
+  render() {
+    return (
+      <Link to={`${this.props.url}`}>
+        <div>
+          <span class="spead-id">{ this.props.speakId }</span>
+          { this.props.title }
+        </div>
+      </Link>
+    )
+  }
+}
+
 class MarkdownSpeak extends Component {
-    render() {
-        return (
-            <div>
-                <ReactMarkdown>
-                    { this.props.content }
-                </ReactMarkdown>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <ReactMarkdown>
+          { this.props.content }
+        </ReactMarkdown>
+      </div>
+    )
+  }
+}
+
+class NavMenuSpeaks extends Component {
+  render() {
+    return (
+      <div class="mdc-layout-grid__cell--span-3">
+        <h2>系列講座</h2>
+        <div class="navmenu speaks">
+          <ul>
+          <li>
+            <NavItemSpeak
+              speakId="1"
+              title="啟蒙與實踐"
+              url={`${this.props.match}/enlightenment-and-practice`}
+            />
+          </li>
+          <li>
+            <NavItemSpeak
+              speakId="2"
+              title="如何從草根中學習？"
+              url={`${this.props.match}/changtc`}
+            />
+          </li>
+          </ul>
+        </div>
+      </div>
+    )
+  }
 }
 
 function Speaks() {
@@ -28,17 +69,7 @@ function Speaks() {
   
   return (
     <div class="mdc-layout-grid__inner">
-      <div class="mdc-layout-grid__cell--span-3">
-        <h2>系列講座</h2>
-        <ul>
-          <li>
-              <Link to={`${match.url}/enlightenment-and-practice`}>啟蒙與實踐</Link>
-          </li>
-          <li>
-              <Link to={`${match.url}/changtc`}>如何從草根中學習？</Link>
-          </li>
-        </ul>
-      </div>
+      <NavMenuSpeaks match={match.url}/>
       <div class="mdc-layout-grid__cell--span-6">
         <Switch>
         <Route path={`${match.path}/:speakId`}>
@@ -55,7 +86,7 @@ function Speaks() {
 
 function getMarkdownContent (speakId) {
     if (speakId === "enlightenment-and-practice") { return Speak1() }
-    else { return Speak2() }
+    else { return (Speak2().content) }
 }
 
 function PageSpeak() {
@@ -64,7 +95,7 @@ function PageSpeak() {
   return (
     <div>
         {/* <h3>Requested topic ID: {speakId}</h3> */}
-
+        {/* <NavMenuSpeaks match={match.url}/> */}
         <MarkdownSpeak content={content} />
     </div>
   );

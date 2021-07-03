@@ -18,7 +18,7 @@ function App() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/topics">系列講座</Link>
+                <Link to="/speaks">系列講座</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>
@@ -33,7 +33,7 @@ function App() {
               <Route path="/about">
                 <About />
               </Route>
-              <Route path="/topics">
+              <Route path="/speaks">
                 <Speaks />
               </Route>
               <Route path="/">
