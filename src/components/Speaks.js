@@ -10,6 +10,7 @@ import {
 
 import Speak1 from './speaks/Speak1'
 import Speak2 from './speaks/Speak2'
+import Card from './Card'
 
 class NavItemSpeak extends Component {
   render() {
@@ -93,10 +94,8 @@ function Speaks() {
           <Switch>
           <Route path={`${match.path}/:speakId`}>
               <PageSpeakContent />
+              <Card />
           </Route>
-          {/* <Route path={match.path}>
-              <h3>Please select a topic.</h3>
-            </Route> */}
           </Switch>
         </div>
         <div class="col-md-2 col-sm-4">
