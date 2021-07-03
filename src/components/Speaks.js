@@ -53,7 +53,7 @@ class NavMenuSpeaks extends Component {
           <li>
             <NavItemSpeak
               speakId="2"
-              title="如何從草根中學習？"
+              title="如何從草根中學習？公益、生態、社會的漫長追尋"
               url={`${this.props.match}/changtc`}
             />
           </li>

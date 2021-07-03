@@ -1,3 +1,5 @@
+$primary: #532F16;
+
 .navmenu {
   font-family: 'Noto Serif TC', serif;
   ul {
@@ -6,7 +8,7 @@
     padding: 0;
   }
   .spead-id {
-    color: gray;
+    color: $primary;
     font-size: 2em;
     font-style: italic;
     display: inline-block;
