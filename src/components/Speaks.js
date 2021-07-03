@@ -125,9 +125,7 @@ function PageSpeakContent() {
   let { speakId } = useParams();
   let content = getMarkdownContent(speakId).content
   return (
-    <div>
-        {/* <h3>Requested topic ID: {speakId}</h3> */}
-        {/* <NavMenuSpeaks match={match.url}/> */}
+    <div class="content">
         <MarkdownSpeak content={content} />
     </div>
   );
