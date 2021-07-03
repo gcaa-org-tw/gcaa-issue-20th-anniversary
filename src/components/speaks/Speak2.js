@@ -1,12 +1,12 @@
 function Speak2() {
   return ({
-    title: '如何從草根中學習？',
+    title: `如何從草根中學習？`,
+    subtitle: `公益、生態、社會的漫長追尋`,
     content: content
   })
 }
 
-const content = `## 公益、生態、社會的漫長追尋
-
+const content = `
 「大家都希望台灣變成讓人尊重、值得驕傲的國家，
 但經過這些年的努力，我們離目標還有多遠?」
 現年 91 歲的台大農化系教授張則周在演講提問，

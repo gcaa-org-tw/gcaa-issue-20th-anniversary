@@ -1,3 +1,4 @@
+import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,52 +8,65 @@ import {
 import Speaks from "./components/Speaks";
 import './App.scss';
 
+class Navbar extends Component {
+  render() {
+    return (
+      <div class="mdc-layout-grid__cell navbar">
+        <ul>
+          <li>
+            <Link to="/speaks/enlightenment-and-practice">系列講座</Link>
+          </li>
+          <li>
+            <Link to="/musical">音樂會</Link>
+          </li>
+        </ul>
+      </div>
+    )
+  }
+}
+
 function App() {
   return (
     <Router>
       <div class="mdc-layout-grid">
-        <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell">
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/speaks">系列講座</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
-         </div>
-        </div>
-
-        <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell--span-12">
-            <Switch>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/speaks">
-                <Speaks />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/:path">
+          <div class="mdc-layout-grid__inner">
+            <Navbar/>
           </div>
-        </div>
+
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12">
+              <Switch>
+                <Route path="/musical">
+                  <About />
+                </Route>
+                <Route path="/speaks">
+                  <Speaks />
+                </Route>
+              </Switch>
+            </div>
+          </div>
+        </Route>
       </div>
     </Router>
   );
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <div>
+      <h2>Home</h2>
+      <Link to="/speaks/enlightenment-and-practice">系列講座</Link>
+    </div>
+    
+  );
 }
 
 function About() {
-  return <h2>About</h2>;
+  return <h2>音樂會</h2>;
 }
 
 export default App;

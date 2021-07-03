@@ -46,7 +46,7 @@ class NavMenuSpeaks extends Component {
           <li>
             <NavItemSpeak
               speakId="1"
-              title="啟蒙與實踐"
+              title="啟蒙與實踐：我們與台灣環境運動交會的生命軌跡"
               url={`${this.props.match}/enlightenment-and-practice`}
             />
           </li>
@@ -69,16 +69,29 @@ function Speaks() {
   
   return (
     <div class="mdc-layout-grid__inner">
-      <NavMenuSpeaks match={match.url}/>
-      <div class="mdc-layout-grid__cell--span-6">
-        <Switch>
-        <Route path={`${match.path}/:speakId`}>
-            <PageSpeak />
-        </Route>
-        <Route path={match.path}>
-            <h3>Please select a topic.</h3>
-        </Route>
-        </Switch>
+      <div class="mdc-layout-grid__cell--span-12">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-12 title">
+            <Switch>
+            <Route path={`${match.path}/:speakId`}>
+              <PageSpeakTitle />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__inner">
+          <NavMenuSpeaks match={match.url}/>
+          <div class="mdc-layout-grid__cell--span-6">
+            <Switch>
+            <Route path={`${match.path}/:speakId`}>
+                <PageSpeak />
+            </Route>
+            <Route path={match.path}>
+                <h3>Please select a topic.</h3>
+            </Route>
+            </Switch>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -86,12 +99,24 @@ function Speaks() {
 
 function getMarkdownContent (speakId) {
     if (speakId === "enlightenment-and-practice") { return Speak1() }
-    else { return (Speak2().content) }
+    else { return Speak2() }
+}
+
+function PageSpeakTitle() {
+  let { speakId } = useParams()
+  let title = getMarkdownContent(speakId).title
+  let subtitle = getMarkdownContent(speakId).subtitle
+  return (
+    <div>
+      <h1>{ title }</h1>
+      <h2>{ subtitle }</h2>
+    </div>
+  )
 }
 
 function PageSpeak() {
   let { speakId } = useParams();
-  let content = getMarkdownContent(speakId)
+  let content = getMarkdownContent(speakId).content
   return (
     <div>
         {/* <h3>Requested topic ID: {speakId}</h3> */}

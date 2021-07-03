@@ -1,4 +1,4 @@
-$primary: #532F16;
+$primary: black; //#532F16;
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
@@ -11,6 +11,11 @@ h1, h2, h3, h4, h5, h6 {
   color: $primary;
 }
 
+h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -18,7 +23,7 @@ code {
 
 a {
   text-decoration: none;
-  color: $primary;
+  color: black;
   &:hover{
     text-decoration: underline;
   }
