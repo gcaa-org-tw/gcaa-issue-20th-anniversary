@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom";
+import ButtonDonation from './ButtonDonation';
 
-const styleBtn = {
-  borderRadius: "1.5em",
-  color: "white",
-  padding: "0.25rem 1rem"
-}
 class Navbar extends Component {
   render() {
     return (
@@ -21,16 +17,7 @@ class Navbar extends Component {
                 <NavLink class="nav-link active" to="/concert">音樂會</NavLink>
               </li>
             </ul>
-            <a 
-              class="btn btn-primary" 
-              href="https://gcaa.neticrm.tw/civicrm/contribute/transact?reset=1&id=3" 
-              role="button" 
-              target="_blank" 
-              rel="noreferrer"
-              style={ styleBtn }
-            >
-              支持綠盟
-            </a>
+            <ButtonDonation WithLove />
           </div>
         </div>
       </nav>

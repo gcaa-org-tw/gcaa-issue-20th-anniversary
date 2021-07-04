@@ -72,6 +72,15 @@ nav {
   background-size: contain;
 }
 
+.btn {
+  border-radius: 1.5em !important;
+  &.btn-primary {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
 
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
