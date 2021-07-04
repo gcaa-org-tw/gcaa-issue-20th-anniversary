@@ -18,7 +18,9 @@ import TamSuiRiver from './pages/speaks/TamSuiRiver';
 import Concert from './pages/Concert';
 import Exhibition from './pages/Exhibition';
 import Forums from './pages/Forums';
+import Outlook from './pages/forum/Outlook';
 import DigitalAge from './pages/forum/DigitalAge';
+import Sustainability from './pages/forum/Sustainability';
 
 const routes = [
   {
@@ -56,9 +58,17 @@ const routes = [
     component: Forums,
     routes: [
       {
+        path: "/forum/outlook",
+        component: Outlook
+      },
+      {
         path: "/forum/digital-age",
         component: DigitalAge
-      }
+      },
+      {
+        path: "/forum/sustainability",
+        component: Sustainability
+      },
     ]
   },
 ];
@@ -83,7 +93,7 @@ export default function App() {
             <Redirect to="/speaks/environmental-movement" />
           </Route>
           <Route exact path="/forum">
-            <Redirect to="/forum/digital-age" />
+            <Redirect to="/forum/outlook" />
           </Route>
           <Route path="/:path">
             <div class="container">
