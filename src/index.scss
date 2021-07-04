@@ -45,13 +45,16 @@ nav {
     padding: 0;
   }
   .speak-id {
-    display: inline-block;
-    &.number {
+    &:hover {
+      text-decoration: none !important;
+    }
+    text-align: justify;
+    .number {
       color: grey;
       font-size: 2em;
       font-style: italic;
       width: 1em;
-      padding: 5px;
+      margin-right: 10px;
       font-weight: 400;
     }
   }

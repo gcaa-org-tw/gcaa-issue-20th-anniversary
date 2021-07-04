@@ -16,10 +16,10 @@ import CardCTA from '../components/CardCTA'
 class NavItemSpeak extends Component {
   render() {
     return (
-      <Link to={`${this.props.url}`}>
-        <div>
-          <span class="speak-id number">{ this.props.speakId }</span>
-          <div class="speak-id">{ this.props.title }</div>
+      <Link to={`${this.props.url}`} class="speak-id">
+        <div class="row py-2">
+          <span class="number">{ this.props.speakId }</span>
+          <div class="col">{ this.props.title }</div>
         </div>
       </Link>
     )
