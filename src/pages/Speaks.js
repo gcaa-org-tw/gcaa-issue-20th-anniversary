@@ -1,12 +1,11 @@
-import React, { Component } from 'react'
-import { Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom";
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react'
+import { Switch, Route } from "react-router-dom";
+import PageContent from '../components/PageContent';
 import Sidebar from '../components/Sidebar';
 
 import EnvironmentalMovement from './speaks/EnvironmentalMovement'
 import ChangTseChou from './speaks/ChangTseChou'
 import TamSuiRiver from './speaks/TamSuiRiver'
-import PageContent from '../components/PageContent';
 
 export const routesSpeaks = [
   {

@@ -1,9 +1,6 @@
-import { useRouteMatch } from 'react-router';
 import Avatar from '../../components/Avatar'
-import PageContent from '../../components/PageContent'
 
-
-function EnvironmentalMovement() {
+export default function EnvironmentalMovement() {
   return ({
     title : `我們與台灣環境運動交會的生命軌跡`,
     subtitle : `從 80 年代走來 林聖崇、林瓊華 對談環運人生`,
@@ -165,5 +162,3 @@ const content = `
 不可能有讓人滿意的改變。因此，林聖崇仍期待
 台灣的公民意識能再提升。
 `
-
-export default EnvironmentalMovement

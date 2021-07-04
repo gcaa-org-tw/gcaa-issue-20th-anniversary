@@ -1,8 +1,12 @@
-function Sustainability() {
+import Avatar from '../../components/Avatar'
+
+export default function Sustainability() {
   return ({
-    forumId : 3,
-    title: '永續轉型的支持體系：從能源轉型到新發展想像',
-    content: content,
+    title : `2050臺灣想像：從環境正義到永續轉型`,
+    subtitle : `永續轉型的支持體系：從能源轉型到新發展想像`,
+    content : content,
+    speakers : (<div></div>),
+    imgSrc : 'img/speaks/tamsui-river.jpg',
   })
 }
 
@@ -15,5 +19,3 @@ const content = `
 力量，是奠基於每個人都有機會表達、如何對待
 彼此，進而建立人與人之間的關係、形成群體。
 `
-
-export default Sustainability

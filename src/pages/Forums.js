@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
-import { Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom";
-import { Container, Row, Col } from 'react-bootstrap'
-import Markdown from '../components/Markdown';
+import React from 'react'
+import { Switch, Route } from "react-router-dom";
+import PageContent from '../components/PageContent';
+import Sidebar from '../components/Sidebar';
+
 import Outlook from './forum/Outlook';
 import DigitalAge from './forum/DigitalAge';
 import Sustainability from './forum/Sustainability';
@@ -9,43 +10,45 @@ import Sustainability from './forum/Sustainability';
 export const routesForums = [
   {
     path: "/forum/outlook",
-    forumId: 1,
-    component: Outlook
+    itemId: 1,
+    title: '主題一：共同前進－台灣環境運動的突圍與展望',
+    data: Outlook(),
   },
   {
     path: "/forum/digital-age",
-    forumId: 2,
-    component: DigitalAge
+    itemId: 2,
+    title: '主題二：數位時代下的環境賦權：社會治理挑戰國家管理',
+    data: DigitalAge(),
   },
   {
     path: "/forum/sustainability",
-    forumId: 3,
-    component: Sustainability
+    itemId: 3,
+    title: '主題三：永續轉型的支持體系：從能源轉型到新發展想像',
+    data: Sustainability(),
   },
 ]
 
 export default function Forums() {
-  let match = useRouteMatch();
   return (
-    <Container className="my-5">
-      <Row className="justify-content-center align-items-center">
-        <Switch>
-        <Route path={`${match.path}/:forumId`}>
-          <Col className="col-11 col-sm-8">
-            {/* <PageContent forumId={forumId} /> */}
-          </Col>
-          </Route>
-        </Switch>
-      </Row>
-    </Container>
+    <Switch>
+      {routesForums.map((route, index) => (
+        <Route
+          key={index}
+          path={route.path}
+          exact={route.exact}
+          children={
+            <PageContent
+              sidebar={
+                <Sidebar
+                  title="主題論壇"
+                  routes={routesForums}
+                />
+              }
+              page={route.data}
+            />
+          }
+        />    
+      ))}
+    </Switch>    
   )
 }
-
-// function PageContent() {
-//   let { forumId } = useParams();
-//   return (
-//     <div class="content">
-//       <Markdown content={content} />
-//     </div>
-//   );
-// }

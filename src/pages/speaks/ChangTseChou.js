@@ -1,6 +1,6 @@
 import Avatar from '../../components/Avatar'
 
-function ChangTseChou() {
+export default function ChangTseChou() {
   return ({
     title:  `如何從草根中學習？`,
     subtitle : `公益、生態、社會的漫長追尋`,
@@ -24,5 +24,3 @@ const content = `
 願意團結，願意參與改革，這要靠著教育與終生
 學習來達成。
 `
-
-export default ChangTseChou

@@ -1,8 +1,12 @@
-function Outlook() {
+import Avatar from '../../components/Avatar'
+
+export default function Outlook() {
   return ({
-    forumId : 1,
-    title: '共同前進－台灣環境運動的突圍與展望',
-    content: content,
+    title : `2050臺灣想像：從環境正義到永續轉型`,
+    subtitle : `共同前進－台灣環境運動的突圍與展望`,
+    content : content,
+    speakers : (<div></div>),
+    imgSrc : 'img/speaks/tamsui-river.jpg',
   })
 }
 
@@ -21,5 +25,3 @@ const content = `
 要垂頭喪氣，是有方法打破的，只是用傳統的方
 法很困難。」
 `
-
-export default Outlook
