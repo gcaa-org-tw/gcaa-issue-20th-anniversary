@@ -1,12 +1,12 @@
 import Avatar from '../../components/Avatar'
 
-function EnvironmentalMovement() {
+export default function EnvironmentalMovement() {
   return ({
     title : `我們與台灣環境運動交會的生命軌跡`,
     subtitle : `從 80 年代走來 林聖崇、林瓊華 對談環運人生`,
     content : content,
     speakers : speakers,
-    imgsrc : 'img/speaks/env-movement.jpg',
+    imgSrc : 'img/speaks/env-movement.jpg',
   })
 }
 
@@ -162,5 +162,3 @@ const content = `
 不可能有讓人滿意的改變。因此，林聖崇仍期待
 台灣的公民意識能再提升。
 `
-
-export default EnvironmentalMovement

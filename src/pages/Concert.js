@@ -1,8 +1,12 @@
+import { Container, Row } from "react-bootstrap"
+
 function Concert() {
   return (
-    <div class="container">
-      <h1>綠盟20 破浪前行活動花絮</h1>
-    </div>
+    <Container className="my-5">
+      <Row class="row justify-content-center align-items-center">
+        <h1>綠盟20 破浪前行活動花絮</h1>
+      </Row>
+    </Container>
   )
 }
 

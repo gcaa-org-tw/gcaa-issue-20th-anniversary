@@ -1,12 +1,12 @@
 import Avatar from '../../components/Avatar'
 
-function TamSuiRiver() {
+export default function TamSuiRiver() {
   return ({
     title : `淡水河今昔變遷二十年`,
     subtitle : `盼河川串起國土計畫寬廣可能`,
     content : content,
     speakers : speakers,
-    imgsrc : 'img/speaks/tamsui-river.jpg',
+    imgSrc : 'img/speaks/tamsui-river.jpg',
   })
 }
 
@@ -25,5 +25,3 @@ const content = `
 資深環境記者張岱屏，與中華經濟研究院研究員
 李永展回顧與淡水河一起流過的歲月。
 `
-
-export default TamSuiRiver
