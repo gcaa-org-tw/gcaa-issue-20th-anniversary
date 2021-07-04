@@ -75,7 +75,6 @@ class NavMenuSpeaks extends Component {
 
 function Speaks() {
   let match = useRouteMatch();
-  
   return (
     <div class="container">
       <div class="row justify-content-center align-items-center">
@@ -158,7 +157,7 @@ function PageSpeakContent() {
   let content = getMarkdownContent(speakId).content
   return (
     <div class="content">
-        <MarkdownSpeak content={content} />
+      <MarkdownSpeak content={content} />
     </div>
   );
 }
@@ -166,10 +165,8 @@ function PageSpeakContent() {
 function PageSpeakers() {
   let { speakId } = useParams()
   let speakers = getMarkdownContent(speakId).speakers
-  return(
-    <div>
-      { speakers }
-    </div>
+  return (
+    <div>{ speakers }</div>
   )
 }
 

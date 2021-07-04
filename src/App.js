@@ -7,12 +7,13 @@ import {
   useLocation,
 } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Landing from "./pages/Landing";
-import Speaks from "./pages/Speaks";
-import EnvironmentalMovement from "./pages/speaks/EnvironmentalMovement" 
-import ChangTseChou from "./pages/speaks/ChangTseChou" 
+import Footer from './components/Footer';
+import Landing from './pages/Landing';
+import Speaks from './pages/Speaks';
+import EnvironmentalMovement from './pages/speaks/EnvironmentalMovement' 
+import ChangTseChou from './pages/speaks/ChangTseChou' 
 import TamSuiRiver from './pages/speaks/TamSuiRiver';
-import Concert from "./pages/Concert";
+import Concert from './pages/Concert';
 
 const routes = [
   {
@@ -65,6 +66,7 @@ export default function App() {
                 <RouteWithSubRoutes key={i} {...route} />
               ))}
             </div>
+            <Footer />
           </Route>
           <Route path="/">
             <Landing />

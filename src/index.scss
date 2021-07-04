@@ -85,5 +85,12 @@ nav {
   }
 }
 
+.footer {
+  p {
+    font-size: small;
+    margin-bottom: 0.25em;
+  }
+}
+
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
