@@ -4,14 +4,14 @@ const style = {
   width: '100%'
 }
 
-class Card extends Component {
+class CardCTA extends Component {
   render() {
     return (
-      <div class="mdc-layout-grid">
+      <div class="container">
         <img src="./../donation.jpg" style={style} />
       </div>
     )
   }
 }
 
-export default Card
+export default CardCTA

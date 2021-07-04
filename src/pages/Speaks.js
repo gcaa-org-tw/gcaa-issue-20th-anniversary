@@ -11,7 +11,7 @@ import {
 import EnvironmentalMovement from './speaks/EnvironmentalMovement'
 import LifelongLearning from './speaks/LifelongLearning'
 import TamSuiRiver from './speaks/TamSuiRiver'
-import Card from './Card'
+import CardCTA from '../components/CardCTA'
 
 class NavItemSpeak extends Component {
   render() {
@@ -102,7 +102,7 @@ function Speaks() {
           <Switch>
           <Route path={`${match.path}/:speakId`}>
               <PageSpeakContent />
-              <Card />
+              <CardCTA />
           </Route>
           </Switch>
         </div>
