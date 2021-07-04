@@ -3,17 +3,35 @@ import {
   NavLink,
 } from "react-router-dom";
 
+const styleLanding = {
+  backgroundColor: 'grey',
+  backgroundImage: 'url("img/landing.jpg")',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: '50%',
+  backgroundSize: 'cover',
+  overflow: 'hidden',
+}
+
 function Landing(props) {
   return (
     <Route>
-      <div class="container-fluid vh-100 align-middle">
-        <div class="text-center align-middle">
-          <h1>Home</h1>
-        </div>
-        <div class="text-center align-middle">
-          <NavLink to={`/speaks`}>系列講座</NavLink>
-          <NavLink to={`/concert`}>綠盟20週年感恩音樂會</NavLink>
-        </div>
+      <div style={ styleLanding }>
+        {/* <div class="vh-100" style={{ background: 'radial-gradient(#bad04f, #0e353d)' }}> */}
+          <div class="container-fluid vh-100 align-middle">
+            <NavLink to={`/speaks`} style={{ textDecoration: 'none' }}>
+            <div class="row vh-100 align-items-center text-center">
+              <h1 style={{ 
+                color: 'white', 
+                textDecoration: 'none',
+                fontWeight: '700',
+                textShadow: '0 1px 1px rgba(0,0,0,.6)',
+              }}>
+                綠盟二十週年特刊
+              </h1>
+            </div>
+            </NavLink>
+          </div>
+        {/* </div> */}
       </div>
     </Route>    
   )

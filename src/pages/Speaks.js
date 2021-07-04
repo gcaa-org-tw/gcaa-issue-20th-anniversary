@@ -128,7 +128,7 @@ function PageSpeakTitle() {
   let title = getMarkdownContent(speakId).title
   let subtitle = getMarkdownContent(speakId).subtitle
   return (
-    <div class="container headline">
+    <div class="container text-center pt-2 pt-md-5">
       <h1>{ title }</h1>
       <h2>{ subtitle }</h2>
     </div>
@@ -143,12 +143,14 @@ function PageSpeakLandingImg() {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat', 
     backgroundPosition: '50%',     
+    backgroundColor: 'lightgray',
     width: '100%',
     minHeight: '60vh',
+    maxHeight: '60vh',
     marginBottom: '2em',
   };  
   return (
-    <div class="container landing-img" style={style}></div>
+    <div class="container" style={style}></div>
   )
 }
 
