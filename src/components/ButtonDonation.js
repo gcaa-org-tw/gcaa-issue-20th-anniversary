@@ -2,7 +2,7 @@ import React from 'react'
 
 function ButtonDonation(props) {
   let iconLove, iconNav;
-  if (props.WithLove) { iconLove = <span><i class="bi bi-heart-fill"></i></span> }
+  if (props.WithLove) { iconLove = <span><i class="bi bi-suit-heart-fill"></i></span> }
   if (props.WithNav) { iconNav = <span><i class="bi bi-box-arrow-right"></i></span> }
   return (
     <a 
