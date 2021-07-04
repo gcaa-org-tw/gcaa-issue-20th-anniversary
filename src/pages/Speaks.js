@@ -7,6 +7,8 @@ import EnvironmentalMovement from './speaks/EnvironmentalMovement'
 import ChangTseChou from './speaks/ChangTseChou'
 import TamSuiRiver from './speaks/TamSuiRiver'
 import SocialMovementXMusic from './speaks/SocialMovementXMusic';
+import SocialMovements from './speaks/SocialMovements';
+import SocialMovementXFilms from './speaks/SocialMovementXFilms';
 
 export const routesSpeaks = [
   {
@@ -32,6 +34,18 @@ export const routesSpeaks = [
     itemId: 4,
     title: '放大街頭的公義之聲：童智偉、吳志寧回顧社運烽火年代',
     data: SocialMovementXMusic()
+  },
+  {
+    path: "/speaks/social-movements",
+    itemId: 5,
+    title: '不只是湊人頭相挺　跨領域社運看見彼此　相扶持邁向未來',
+    data: SocialMovements()
+  },
+  {
+    path: "/speaks/social-movement-x-films",
+    itemId: 6,
+    title: '從影像展現的社會視野　鄭有傑不服膺潛規則　我只能是我自己',
+    data: SocialMovementXFilms()
   },
 ]
 
