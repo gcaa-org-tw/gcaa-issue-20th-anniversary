@@ -1,3 +1,5 @@
+import Avatar from '../../components/Avatar'
+
 function EnvironmentalMovement() {
   return ({
     title : `我們與台灣環境運動交會的生命軌跡`,
@@ -8,7 +10,10 @@ function EnvironmentalMovement() {
   })
 }
 
-const speakers = `林聖崇、林瓊華`
+const speakers = (<div>
+  <Avatar name="林聖崇" avatarUrl="img/avatar/s1_linsc.jpg"/>
+  <Avatar name="林瓊華" avatarUrl="img/avatar/s1_linch.jpg"/>
+</div>)
 
 const content = `
 「每個人都是在一起學習，人生就是這樣學習過
