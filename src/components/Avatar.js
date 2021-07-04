@@ -1,9 +1,12 @@
 function Avatar(props) {
   return (
-    <img className="Avatar"
-      src={props.user.avatarUrl}
-      alt={props.user.name}
-    />
+    <div class="mx-auto p-2 text-center">
+      <img className="Avatar"
+        src={props.avatarUrl}
+        style={{ width: '80px', height: '80px', borderRadius: '50%', fill: 'grey' }}
+      />
+      <div class="py-2">{props.name}</div>
+    </div>
   );
 }
 
