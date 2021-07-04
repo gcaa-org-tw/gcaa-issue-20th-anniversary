@@ -1,3 +1,5 @@
+import Avatar from '../../components/Avatar'
+
 function TamSuiRiver() {
   return ({
     title : `淡水河今昔變遷二十年`,
@@ -8,7 +10,11 @@ function TamSuiRiver() {
   })
 }
 
-const speakers = `陳建志、張岱屏、李永展`
+const speakers = (<div>
+  <Avatar name="陳建志" avatarUrl="img/avatar/s3_chen.jpg"/>
+  <Avatar name="張岱屏" avatarUrl="img/avatar/s3_chang.jpg"/>
+  <Avatar name="李永展" avatarUrl="img/avatar/s3_lee.jpg"/>
+</div>)
 
 const content = `
 「每個人心裡都有個淡水河的故事。」為雙北都會

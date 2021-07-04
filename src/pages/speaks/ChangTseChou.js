@@ -1,3 +1,5 @@
+import Avatar from '../../components/Avatar'
+
 function ChangTseChou() {
   return ({
     title:  `如何從草根中學習？`,
@@ -8,7 +10,9 @@ function ChangTseChou() {
   })
 }
 
-const speakers = `張則周`
+const speakers = (<div>
+  <Avatar name="張則周" avatarUrl="img/avatar/s2_chang.jpg"/>
+</div>)
 
 const content = `
 「大家都希望台灣變成讓人尊重、值得驕傲的國家，
