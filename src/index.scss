@@ -1,0 +1,96 @@
+$primary: #bad04f;
+$font-family-sans-serif: -apple-system, 'Noto Sans TC', sans-serif;
+$body-bg: white;
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.navbar-brand {
+  font-family: 'Noto Serif TC', serif;
+  padding-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a:not(.btn) {
+  text-decoration: none;
+  color: black;
+  &:hover{
+    text-decoration: underline;
+    color: $primary;
+  }
+}
+
+nav {
+  background-color: $body-bg;
+}
+
+.navmenu {
+  font-family: 'Noto Serif TC', serif;
+  ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+  }
+  .speak-id {
+    &:hover {
+      text-decoration: none !important;
+    }
+    text-align: justify;
+    .number {
+      color: grey;
+      font-size: 2em;
+      font-style: italic;
+      width: 1em;
+      margin-right: 10px;
+      font-weight: 400;
+    }
+  }
+}
+
+.headline {
+  text-align: center;
+  padding: 1em;
+}
+
+.content {
+  text-align: justify;
+  line-height: 2em;
+}
+
+.landing-img {
+  max-height: 60vh;
+  background-size: contain;
+}
+
+.btn {
+  border-radius: 1.5em !important;
+  &.btn-primary {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.footer {
+  p {
+    font-size: small;
+    margin-bottom: 0.25em;
+  }
+}
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
