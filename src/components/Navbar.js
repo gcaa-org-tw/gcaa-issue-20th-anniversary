@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom";
 
+const styleBtn = {
+  borderRadius: "1.5em",
+  color: "white",
+  padding: "0.25rem 1rem"
+}
 class Navbar extends Component {
   render() {
     return (
@@ -22,6 +27,7 @@ class Navbar extends Component {
               role="button" 
               target="_blank" 
               rel="noreferrer"
+              style={ styleBtn }
             >
               支持綠盟
             </a>
