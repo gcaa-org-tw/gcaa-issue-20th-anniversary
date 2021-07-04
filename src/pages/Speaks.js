@@ -76,7 +76,7 @@ class NavMenuSpeaks extends Component {
 function Speaks() {
   let match = useRouteMatch();
   return (
-    <div class="container">
+    <div class="container my-5">
       <div class="row justify-content-center align-items-center">
         <Switch>
         <Route path={`${match.path}/:speakId`}>
