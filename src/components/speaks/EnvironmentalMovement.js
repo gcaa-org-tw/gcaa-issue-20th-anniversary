@@ -1,4 +1,4 @@
-function Speak1() {
+function EnvironmentalMovement() {
   return ({
     title : `我們與台灣環境運動交會的生命軌跡`,
     subtitle : `從 80 年代走來 林聖崇、林瓊華 對談環運人生`,
@@ -158,5 +158,4 @@ const content = `
 台灣的公民意識能再提升。
 `
 
-
-export default Speak1
+export default EnvironmentalMovement

@@ -17,7 +17,7 @@ class Navbar extends Component {
             <Link to="/speaks/enlightenment-and-practice">系列講座</Link>
           </li>
           <li>
-            <Link to="/musical">綠盟 20 週年感恩音樂會</Link>
+            <Link to="/musical">綠盟20週年感恩音樂會</Link>
           </li>
         </ul>
       </div>
@@ -30,6 +30,9 @@ function App() {
     <Router>
       <div class="container">
         <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/gcaa-issue-20th-anniversary" exact>
           <Home />
         </Route>
         <Route path="/:path">
@@ -51,10 +54,12 @@ function App() {
 
 function Home() {
   return (
-    <div>
-      <h2>Home</h2>
-      <Link to="/speaks/enlightenment-and-practice">系列講座</Link>
-    </div>
+    <Router>
+      <div>
+        <h2>Home</h2>
+        <Link to="/gcaa-issue-20th-anniversary/speaks/environmental-movement">系列講座</Link>
+      </div>
+    </Router>
     
   );
 }

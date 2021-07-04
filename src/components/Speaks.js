@@ -8,8 +8,9 @@ import {
   useParams
 } from "react-router-dom";
 
-import Speak1 from './speaks/Speak1'
-import Speak2 from './speaks/Speak2'
+import EnvironmentalMovement from './speaks/EnvironmentalMovement'
+import LifelongLearning from './speaks/LifelongLearning'
+import TamSuiRiver from './speaks/TamSuiRiver'
 import Card from './Card'
 
 class NavItemSpeak extends Component {
@@ -47,15 +48,22 @@ class NavMenuSpeaks extends Component {
           <li>
             <NavItemSpeak
               speakId="1"
-              title="啟蒙與實踐：我們與台灣環境運動交會的生命軌跡"
-              url={`${this.props.match}/enlightenment-and-practice`}
+              title="從80年代走來　林聖崇、林瓊華對談環運人生"
+              url={`${this.props.match}/environmental-movement`}
             />
           </li>
           <li>
             <NavItemSpeak
               speakId="2"
-              title="如何從草根中學習？公益、生態、社會的漫長追尋"
-              url={`${this.props.match}/changtc`}
+              title="終身教育、終身學習　盼台灣素質提升　教授張則周再開講"
+              url={`${this.props.match}/lifelong-learning`}
+            />
+          </li>
+          <li>
+            <NavItemSpeak
+              speakId="3"
+              title="20年光陰找回淡水河清淨　盼河川串起國土計畫寬廣可能"
+              url={`${this.props.match}/tamsui-river`}
             />
           </li>
           </ul>
@@ -111,8 +119,9 @@ function Speaks() {
 }
 
 function getMarkdownContent (speakId) {
-    if (speakId === "enlightenment-and-practice") { return Speak1() }
-    else { return Speak2() }
+    if (speakId === "environmental-movement") { return EnvironmentalMovement() }
+    else if (speakId === "lifelong-learning") { return LifelongLearning() }
+    else { return TamSuiRiver() }
 }
 
 function PageSpeakTitle() {
