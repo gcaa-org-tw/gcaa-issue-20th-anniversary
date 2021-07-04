@@ -7,8 +7,8 @@ class Footer extends Component {
       <div class="bg-primary footer">
         <div class="container py-5">
           <div class="row justify-content-center">
-            <div class="col-6 col-sm-3">
-              <img src="img/logo.png" style={{ width: '200px', height: 'auto' }} />
+            <div class="col-6 col-sm-3 text-center">
+              <img src="img/logo.png" style={{ width: '100px', height: 'auto' }} />
             </div>
             <div class="col-6">
               <div class="row justify-content-center">
