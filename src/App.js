@@ -1,46 +1,22 @@
 import React, { useEffect } from 'react'
-import {
-  HashRouter,
-  Switch,
-  Route,
-  Redirect,
-  useLocation,
-} from "react-router-dom";
+import { HashRouter, Switch, Route, Redirect, useLocation } from "react-router-dom";
+import { Container } from 'react-bootstrap';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 import Landing from './pages/Landing';
-import Speaks from './pages/Speaks';
-import EnvironmentalMovement from './pages/speaks/EnvironmentalMovement' 
-import ChangTseChou from './pages/speaks/ChangTseChou' 
-import TamSuiRiver from './pages/speaks/TamSuiRiver';
+import Speaks, { routesSpeaks } from './pages/Speaks';
 import Concert from './pages/Concert';
 import Exhibition from './pages/Exhibition';
-import Forums from './pages/Forums';
-import Outlook from './pages/forum/Outlook';
-import DigitalAge from './pages/forum/DigitalAge';
-import Sustainability from './pages/forum/Sustainability';
+import Forums, { routesForums } from './pages/Forums';
 
 const routes = [
   {
     path: "/speaks",
     title: '系列講座',
     component: Speaks,
-    routes: [
-      {
-        path: "/speaks/environmental-movement",
-        component: EnvironmentalMovement
-      },
-      {
-        path: "/speaks/chang-tse-chou",
-        component: ChangTseChou
-      },
-      {
-        path: "/speaks/tamsui-river",
-        component: TamSuiRiver
-      },
-    ]
+    routes: routesSpeaks,
   },
   {
     path: "/concert",
@@ -56,20 +32,7 @@ const routes = [
     path: "/forum",
     title: '主題論壇',
     component: Forums,
-    routes: [
-      {
-        path: "/forum/outlook",
-        component: Outlook
-      },
-      {
-        path: "/forum/digital-age",
-        component: DigitalAge
-      },
-      {
-        path: "/forum/sustainability",
-        component: Sustainability
-      },
-    ]
+    routes: routesForums,
   },
 ];
 
@@ -96,12 +59,12 @@ export default function App() {
             <Redirect to="/forum/outlook" />
           </Route>
           <Route path="/:path">
-            <div class="container">
+            <Container>
               <Header routes={routes} />
               {routes.map((route, i) => (
                 <RouteWithSubRoutes key={i} {...route} />
               ))}
-            </div>
+            </Container>
             <Footer />
           </Route>
           <Route path="/">

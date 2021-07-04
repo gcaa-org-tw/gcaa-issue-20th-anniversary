@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactMarkdown from 'react-markdown';
 import { Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap'
 
@@ -7,6 +6,25 @@ import EnvironmentalMovement from './speaks/EnvironmentalMovement'
 import ChangTseChou from './speaks/ChangTseChou'
 import TamSuiRiver from './speaks/TamSuiRiver'
 import CardCTA from '../components/CardCTA'
+import Markdown from '../components/Markdown';
+
+export const routesSpeaks = [
+  {
+    path: "/speaks/environmental-movement",
+    speakId: 1,
+    component: EnvironmentalMovement
+  },
+  {
+    path: "/speaks/chang-tse-chou",
+    speakId: 2,
+    component: ChangTseChou
+  },
+  {
+    path: "/speaks/tamsui-river",
+    speakId: 3,
+    component: TamSuiRiver
+  },
+]
 
 class NavItemSpeak extends Component {
   render() {
@@ -17,18 +35,6 @@ class NavItemSpeak extends Component {
           <Col>{ this.props.title }</Col>
         </Row>
       </Link>
-    )
-  }
-}
-
-class MarkdownSpeak extends Component {
-  render() {
-    return (
-      <div class="text-break">
-        <ReactMarkdown>
-          { this.props.content }
-        </ReactMarkdown>
-      </div>
     )
   }
 }
@@ -118,7 +124,7 @@ function getMarkdownContent (speakId) {
     else { return TamSuiRiver() }
 }
 
-function PageSpeakTitle() {
+export default function PageSpeakTitle() {
   let { speakId } = useParams()
   let title = getMarkdownContent(speakId).title
   let subtitle = getMarkdownContent(speakId).subtitle
@@ -154,7 +160,7 @@ function PageSpeakContent() {
   let content = getMarkdownContent(speakId).content
   return (
     <div class="content">
-      <MarkdownSpeak content={content} />
+      <Markdown content={content} />
     </div>
   );
 }
@@ -166,5 +172,3 @@ function PageSpeakers() {
     <div>{ speakers }</div>
   )
 }
-
-export default Speaks;
