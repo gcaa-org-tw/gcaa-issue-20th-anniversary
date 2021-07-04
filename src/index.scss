@@ -1,27 +1,22 @@
 $primary: #bad04f;
 $font-family-sans-serif: -apple-system, 'Noto Sans TC', sans-serif;
+$font-family-serif: -apple-system, 'Noto Serif TC', serif;
 $body-bg: white;
 
 body {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: $font-family-sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6, 
-.navbar-brand {
-  font-family: 'Noto Serif TC', serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-serif;
   padding-bottom: 0.5em;
 }
 
 h1 {
   font-size: 40px;
   line-height: 60px;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 a:not(.btn) {
@@ -35,10 +30,13 @@ a:not(.btn) {
 
 nav {
   background-color: $body-bg;
+  .navbar-brand {
+    font-family: $font-family-serif;
+  }
 }
 
 .navmenu {
-  font-family: 'Noto Serif TC', serif;
+  font-family: $font-family-serif;
   ul {
     list-style-type:none;
     margin: 0;
