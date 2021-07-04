@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import Landing from "./pages/Landing";
 import Speaks from "./pages/Speaks";
 import EnvironmentalMovement from "./pages/speaks/EnvironmentalMovement" 
-import LifelongLearning from "./pages/speaks/LifelongLearning" 
+import ChangTseChou from "./pages/speaks/ChangTseChou" 
 import TamSuiRiver from './pages/speaks/TamSuiRiver';
 import Concert from "./pages/Concert";
 
@@ -23,8 +23,8 @@ const routes = [
         component: EnvironmentalMovement
       },
       {
-        path: "/speaks/lifelong-learning",
-        component: LifelongLearning
+        path: "/speaks/chang-tse-chou",
+        component: ChangTseChou
       },
       {
         path: "/speaks/tamsui-river",

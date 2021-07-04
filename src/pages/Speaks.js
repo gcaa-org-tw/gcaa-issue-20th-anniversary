@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 import EnvironmentalMovement from './speaks/EnvironmentalMovement'
-import LifelongLearning from './speaks/LifelongLearning'
+import ChangTseChou from './speaks/ChangTseChou'
 import TamSuiRiver from './speaks/TamSuiRiver'
 import CardCTA from '../components/CardCTA'
 
@@ -56,7 +56,7 @@ class NavMenuSpeaks extends Component {
             <NavItemSpeak
               speakId="2"
               title="終身教育、終身學習　盼台灣素質提升　教授張則周再開講"
-              url={`${this.props.match}/lifelong-learning`}
+              url={`${this.props.match}/chang-tse-chou`}
             />
           </li>
           <li>
@@ -120,7 +120,7 @@ function Speaks() {
 
 function getMarkdownContent (speakId) {
     if (speakId === "environmental-movement") { return EnvironmentalMovement() }
-    else if (speakId === "lifelong-learning") { return LifelongLearning() }
+    else if (speakId === "chang-tse-chou") { return ChangTseChou() }
     else { return TamSuiRiver() }
 }
 
