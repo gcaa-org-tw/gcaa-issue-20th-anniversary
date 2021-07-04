@@ -4,11 +4,12 @@ import {
   Switch,
   Route,
   Redirect,
-  NavLink,
   useLocation,
 } from "react-router-dom";
-import ButtonDonation from './components/ButtonDonation';
+
+import Header from './components/Header';
 import Footer from './components/Footer';
+
 import Landing from './pages/Landing';
 import Speaks from './pages/Speaks';
 import EnvironmentalMovement from './pages/speaks/EnvironmentalMovement' 
@@ -70,7 +71,7 @@ export default function App() {
           </Route>
           <Route path="/:path">
             <div class="container">
-              <Navbar />
+              <Header routes={routes} />
               {routes.map((route, i) => (
                 <RouteWithSubRoutes key={i} {...route} />
               ))}
@@ -96,28 +97,4 @@ function RouteWithSubRoutes(route) {
       )}
     />
   );
-}
-
-function NavItem(route) {
-  return (
-    <NavLink class="nav-link" to={route.path}>{route.title}</NavLink>
-  )
-}
-
-function Navbar() {
-  return (
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <div class="navbar-brand">綠盟二十週年特刊</div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            {routes.map((route, i) => (
-              <NavItem key={i} {...route} />
-            ))}
-          </ul>
-          <ButtonDonation WithLove />
-        </div>
-      </div>
-    </nav>
-  )
 }
