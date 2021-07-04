@@ -5,10 +5,17 @@ export default function Sustainability() {
     title : `2050臺灣想像：從環境正義到永續轉型`,
     subtitle : `永續轉型的支持體系：從能源轉型到新發展想像`,
     content : content,
-    speakers : (<div></div>),
+    speakers : speakers,
     imgSrc : 'img/speaks/tamsui-river.jpg',
   })
 }
+
+const speakers = (<div>
+  <Avatar name="戴興盛" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="魏揚" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="李易昆" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="陳惠萍" avatarUrl="img/avatar/person-circle.svg"/>
+</div>)
 
 const content = `
 「讓人有機會講話，比他講什麼話重要，這是社大

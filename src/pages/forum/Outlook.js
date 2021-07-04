@@ -5,10 +5,19 @@ export default function Outlook() {
     title : `2050臺灣想像：從環境正義到永續轉型`,
     subtitle : `共同前進－台灣環境運動的突圍與展望`,
     content : content,
-    speakers : (<div></div>),
+    speakers : speakers,
     imgSrc : 'img/speaks/tamsui-river.jpg',
   })
 }
+
+const speakers = (<div>
+  <Avatar name="賴偉傑" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="李根政" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="詹順貴" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="朱增宏" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="林聖崇" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="陳曼麗" avatarUrl="img/avatar/person-circle.svg"/>
+</div>)
 
 const content = `
 論壇第一個場次邀請六位環境運動前輩，從自身

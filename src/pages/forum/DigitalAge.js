@@ -11,10 +11,12 @@ export default function DigitalAge() {
 }
 
 const speakers = (<div>
-  <Avatar name="陳建志" avatarUrl="img/avatar/s3_chen.jpg"/>
-  <Avatar name="張岱屏" avatarUrl="img/avatar/s3_chang.jpg"/>
-  <Avatar name="李永展" avatarUrl="img/avatar/s3_lee.jpg"/>
+  <Avatar name="杜文苓" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="曾虹文" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="耿璐" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="林韋廷" avatarUrl="img/avatar/person-circle.svg"/>
 </div>)
+
 
 const content = `
 隨著數位時代的來臨，公民社會得到新的工具，

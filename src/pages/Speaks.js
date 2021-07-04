@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar';
 import EnvironmentalMovement from './speaks/EnvironmentalMovement'
 import ChangTseChou from './speaks/ChangTseChou'
 import TamSuiRiver from './speaks/TamSuiRiver'
+import SocialMovementXMusic from './speaks/SocialMovementXMusic';
 
 export const routesSpeaks = [
   {
@@ -25,6 +26,12 @@ export const routesSpeaks = [
     itemId: 3,
     title: '20年光陰找回淡水河清淨　盼河川串起國土計畫寬廣可能',
     data: TamSuiRiver()
+  },
+  {
+    path: "/speaks/social-movement-x-music",
+    itemId: 4,
+    title: '放大街頭的公義之聲：童智偉、吳志寧回顧社運烽火年代',
+    data: SocialMovementXMusic()
   },
 ]
 
