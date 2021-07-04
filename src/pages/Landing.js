@@ -1,7 +1,5 @@
-import {
-  Route,
-  NavLink,
-} from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
+import { Container, Row } from "react-bootstrap";
 
 const styleLanding = {
   backgroundColor: 'grey',
@@ -16,10 +14,9 @@ function Landing(props) {
   return (
     <Route>
       <div style={ styleLanding }>
-        {/* <div class="vh-100" style={{ background: 'radial-gradient(#bad04f, #0e353d)' }}> */}
-          <div class="container-fluid vh-100 align-middle">
+          <Container fluid className="vh-100 align-middle">
             <NavLink to={`/speaks`} style={{ textDecoration: 'none' }}>
-            <div class="row vh-100 align-items-center text-center">
+            <Row className="vh-100 align-items-center text-center">
               <h1 style={{ 
                 color: 'white', 
                 textDecoration: 'none',
@@ -28,10 +25,9 @@ function Landing(props) {
               }}>
                 綠盟二十週年特刊
               </h1>
-            </div>
+            </Row>
             </NavLink>
-          </div>
-        {/* </div> */}
+          </Container>
       </div>
     </Route>    
   )

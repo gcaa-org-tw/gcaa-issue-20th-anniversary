@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
 import ReactMarkdown from 'react-markdown';
-import {
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
+import { Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom";
+import { Container, Row, Col } from 'react-bootstrap'
 
 import EnvironmentalMovement from './speaks/EnvironmentalMovement'
 import ChangTseChou from './speaks/ChangTseChou'
@@ -17,10 +12,10 @@ class NavItemSpeak extends Component {
   render() {
     return (
       <Link to={`${this.props.url}`} class="speak-id">
-        <div class="row py-2">
+        <Row className="py-2">
           <span class="number">{ this.props.speakId }</span>
-          <div class="col">{ this.props.title }</div>
-        </div>
+          <Col>{ this.props.title }</Col>
+        </Row>
       </Link>
     )
   }
@@ -76,44 +71,44 @@ class NavMenuSpeaks extends Component {
 function Speaks() {
   let match = useRouteMatch();
   return (
-    <div class="container my-5">
-      <div class="row justify-content-center align-items-center">
+    <Container className="my-5">
+      <Row className="justify-content-center align-items-center">
         <Switch>
         <Route path={`${match.path}/:speakId`}>
-          <div class="col-11 col-sm-8">
+          <Col className="col-11 col-sm-8">
             <PageSpeakTitle />
-          </div>
+          </Col>
           </Route>
         </Switch>
-      </div>
-      <div class="row justify-content-center align-items-center">
+      </Row>
+      <Row className="justify-content-center align-items-center">
         <Switch>
         <Route path={`${match.path}/:speakId`}>
           <PageSpeakLandingImg />
         </Route>
         </Switch>
-      </div>
-      <div class="row justify-content-center justify-content-md-evenly">
-        <div class="col-8 col-md-6 col-lg-2 order-lg-first order-last">
+      </Row>
+      <Row className="justify-content-center justify-content-md-evenly">
+        <Col className="col-8 col-md-6 col-lg-2 order-lg-first order-last">
           <NavMenuSpeaks match={match.url}/>
-        </div>
-        <div class="col-11 col-md-8 col-lg-6">
+        </Col>
+        <Col className="col-11 col-md-8 col-lg-6">
           <Switch>
           <Route path={`${match.path}/:speakId`}>
               <PageSpeakContent />
               <CardCTA />
           </Route>
           </Switch>
-        </div>
-        <div class="col-6 col-md-3 col-lg-2 order-lg-last order-first">
+        </Col>
+        <Col className="col-6 col-md-3 col-lg-2 order-lg-last order-first">
           <Switch>
           <Route path={`${match.path}/:speakId`}>
             <PageSpeakers />
           </Route>
           </Switch>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
@@ -128,10 +123,10 @@ function PageSpeakTitle() {
   let title = getMarkdownContent(speakId).title
   let subtitle = getMarkdownContent(speakId).subtitle
   return (
-    <div class="container text-center pt-2 pt-md-5">
+    <Container className="text-center pt-2 pt-md-5">
       <h1>{ title }</h1>
       <h2>{ subtitle }</h2>
-    </div>
+    </Container>
   )
 }
 
@@ -150,7 +145,7 @@ function PageSpeakLandingImg() {
     marginBottom: '2em',
   };  
   return (
-    <div class="container" style={style}></div>
+    <Container style={style}></Container>
   )
 }
 
