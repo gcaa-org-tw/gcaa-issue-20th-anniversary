@@ -13,7 +13,7 @@ export default function PageContent(props) {
         </Col>
       </Row>
       <Row className="justify-content-center align-items-center">
-        <LandingImg page={ props.page } />
+        <LandingImg imgSrc={ props.page.imgSrc } />
       </Row>
       <Row className="justify-content-center justify-content-md-evenly">
         <Col className="col-8 col-md-6 col-lg-2 order-lg-first order-last">
@@ -42,9 +42,9 @@ function Title(props) {
   )
 }
 
-function LandingImg(page) {
+function LandingImg(props) {
   const style = {
-    backgroundImage: 'url(' + page.imgSrc + ')',
+    backgroundImage: 'url(' + props.imgSrc + ')',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat', 
     backgroundPosition: '50%',     
