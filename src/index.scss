@@ -23,7 +23,7 @@ code {
     monospace;
 }
 
-a {
+a:not(.btn) {
   text-decoration: none;
   color: black;
   &:hover{

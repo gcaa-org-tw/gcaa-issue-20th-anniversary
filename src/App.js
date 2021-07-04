@@ -41,17 +41,19 @@ const routes = [
 
 export default function App() {
   return (
-    <div class="container">
+    <div>
       <HashRouter>
         <Switch>
           <Route exact path="/speaks">
             <Redirect to="/speaks/environmental-movement" />
           </Route>
           <Route path="/:path">
-            <Navbar />
-            {routes.map((route, i) => (
-              <RouteWithSubRoutes key={i} {...route} />
-            ))}
+            <div class="container">
+              <Navbar />
+              {routes.map((route, i) => (
+                <RouteWithSubRoutes key={i} {...route} />
+              ))}
+            </div>
           </Route>
           <Route path="/">
             <Landing />

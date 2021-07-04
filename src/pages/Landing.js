@@ -6,10 +6,14 @@ import {
 function Landing(props) {
   return (
     <Route>
-      <div>
-        <h2>Home</h2>
-        <NavLink to={`/speaks`}>系列講座</NavLink>
-        <NavLink to={`/concert`}>綠盟20週年感恩音樂會</NavLink>
+      <div class="container-fluid vh-100 align-middle">
+        <div class="text-center align-middle">
+          <h1>Home</h1>
+        </div>
+        <div class="text-center align-middle">
+          <NavLink to={`/speaks`}>系列講座</NavLink>
+          <NavLink to={`/concert`}>綠盟20週年感恩音樂會</NavLink>
+        </div>
       </div>
     </Route>    
   )
