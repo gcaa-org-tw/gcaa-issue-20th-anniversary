@@ -6,7 +6,7 @@ function ChangTseChou() {
     subtitle : `公益、生態、社會的漫長追尋`,
     content : content,
     speakers : speakers,
-    imgsrc : 'img/speaks/chang-tc.jpg',
+    imgSrc : 'img/speaks/chang-tc.jpg',
   })
 }
 

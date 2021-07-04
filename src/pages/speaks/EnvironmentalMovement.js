@@ -1,4 +1,7 @@
+import { useRouteMatch } from 'react-router';
 import Avatar from '../../components/Avatar'
+import PageContent from '../../components/PageContent'
+
 
 function EnvironmentalMovement() {
   return ({
@@ -6,7 +9,7 @@ function EnvironmentalMovement() {
     subtitle : `從 80 年代走來 林聖崇、林瓊華 對談環運人生`,
     content : content,
     speakers : speakers,
-    imgsrc : 'img/speaks/env-movement.jpg',
+    imgSrc : 'img/speaks/env-movement.jpg',
   })
 }
 

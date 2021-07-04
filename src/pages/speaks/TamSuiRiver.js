@@ -6,7 +6,7 @@ function TamSuiRiver() {
     subtitle : `盼河川串起國土計畫寬廣可能`,
     content : content,
     speakers : speakers,
-    imgsrc : 'img/speaks/tamsui-river.jpg',
+    imgSrc : 'img/speaks/tamsui-river.jpg',
   })
 }
 
