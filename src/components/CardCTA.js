@@ -9,7 +9,7 @@ const style = {
 class CardCTA extends Component {
   render() {
     return (
-      <div class="container-fluid">
+      <div class="container-fluid p-2">
         <div class="row align-items-center">
           <div class="col">
             <h3>陪伴綠盟走向下一個二十年</h3>
