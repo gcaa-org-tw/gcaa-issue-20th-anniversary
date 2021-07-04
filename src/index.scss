@@ -1,16 +1,16 @@
-$primary: #532F16;
+$primary: #bad04f;
+$font-family-sans-serif: -apple-system, 'Noto Sans TC', sans-serif;
+$body-bg: white;
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FDF6EA;
 }
 
 h1, h2, h3, h4, h5, h6, 
 .navbar-brand {
   font-family: 'Noto Serif TC', serif;
-  color: $primary;
   padding-bottom: 0.5em;
 }
 
@@ -32,3 +32,46 @@ a:not(.btn) {
     color: $primary;
   }
 }
+
+nav {
+  background-color: $body-bg;
+}
+
+.navmenu {
+  font-family: 'Noto Serif TC', serif;
+  ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+  }
+  .speak-id {
+    display: inline-block;
+    &.number {
+      color: grey;
+      font-size: 2em;
+      font-style: italic;
+      width: 1em;
+      padding: 5px;
+      font-weight: 400;
+    }
+  }
+}
+
+.headline {
+  text-align: center;
+  padding: 1em;
+}
+
+.content {
+  text-align: justify;
+  line-height: 2em;
+}
+
+.landing-img {
+  max-height: 60vh;
+  background-size: contain;
+}
+
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";

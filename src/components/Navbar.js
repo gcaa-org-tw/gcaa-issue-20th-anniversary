@@ -17,7 +17,7 @@ class Navbar extends Component {
               </li>
             </ul>
             <a 
-              class="btn btn-success" 
+              class="btn btn-primary" 
               href="https://gcaa.neticrm.tw/civicrm/contribute/transact?reset=1&id=3" 
               role="button" 
               target="_blank" 

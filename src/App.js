@@ -12,7 +12,6 @@ import EnvironmentalMovement from "./pages/speaks/EnvironmentalMovement"
 import LifelongLearning from "./pages/speaks/LifelongLearning" 
 import TamSuiRiver from './pages/speaks/TamSuiRiver';
 import Concert from "./pages/Concert";
-import './App.scss';
 
 const routes = [
   {
