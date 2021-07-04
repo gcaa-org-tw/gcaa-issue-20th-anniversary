@@ -17,6 +17,8 @@ import ChangTseChou from './pages/speaks/ChangTseChou'
 import TamSuiRiver from './pages/speaks/TamSuiRiver';
 import Concert from './pages/Concert';
 import Exhibition from './pages/Exhibition';
+import Forums from './pages/Forums';
+import DigitalAge from './pages/forum/DigitalAge';
 
 const routes = [
   {
@@ -48,6 +50,17 @@ const routes = [
     title: '藝術展',
     component: Exhibition
   },
+  {
+    path: "/forum",
+    title: '主題論壇',
+    component: Forums,
+    routes: [
+      {
+        path: "/forum/digital-age",
+        component: DigitalAge
+      }
+    ]
+  },
 ];
 
 function ScrollToTop() {
@@ -68,6 +81,9 @@ export default function App() {
         <Switch>
           <Route exact path="/speaks">
             <Redirect to="/speaks/environmental-movement" />
+          </Route>
+          <Route exact path="/forum">
+            <Redirect to="/forum/digital-age" />
           </Route>
           <Route path="/:path">
             <div class="container">
