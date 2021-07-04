@@ -4,9 +4,10 @@ import {
   Switch,
   Route,
   Redirect,
+  NavLink,
   useLocation,
 } from "react-router-dom";
-import Navbar from './components/Navbar';
+import ButtonDonation from './components/ButtonDonation';
 import Footer from './components/Footer';
 import Landing from './pages/Landing';
 import Speaks from './pages/Speaks';
@@ -14,10 +15,12 @@ import EnvironmentalMovement from './pages/speaks/EnvironmentalMovement'
 import ChangTseChou from './pages/speaks/ChangTseChou' 
 import TamSuiRiver from './pages/speaks/TamSuiRiver';
 import Concert from './pages/Concert';
+import Exhibition from './pages/Exhibition';
 
 const routes = [
   {
     path: "/speaks",
+    title: '系列講座',
     component: Speaks,
     routes: [
       {
@@ -36,7 +39,13 @@ const routes = [
   },
   {
     path: "/concert",
+    title: '音樂會',
     component: Concert
+  },
+  {
+    path: "/exhibition",
+    title: '藝術展',
+    component: Exhibition
   },
 ];
 
@@ -87,4 +96,28 @@ function RouteWithSubRoutes(route) {
       )}
     />
   );
+}
+
+function NavItem(route) {
+  return (
+    <NavLink class="nav-link" to={route.path}>{route.title}</NavLink>
+  )
+}
+
+function Navbar() {
+  return (
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="navbar-brand">綠盟二十週年特刊</div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            {routes.map((route, i) => (
+              <NavItem key={i} {...route} />
+            ))}
+          </ul>
+          <ButtonDonation WithLove />
+        </div>
+      </div>
+    </nav>
+  )
 }
