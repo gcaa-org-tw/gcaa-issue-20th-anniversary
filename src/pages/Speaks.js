@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap'
+import Sidebar from '../components/Sidebar';
 
 import EnvironmentalMovement from './speaks/EnvironmentalMovement'
 import ChangTseChou from './speaks/ChangTseChou'
@@ -29,7 +30,6 @@ export const routesSpeaks = [
 ]
 
 export default function Speaks() {
-  // let match = useRouteMatch();
   return (
     <Switch>
       {routesSpeaks.map((route, index) => (
@@ -39,47 +39,17 @@ export default function Speaks() {
           exact={route.exact}
           children={
             <PageContent
-              sidebar={<Sidebar />}
+              sidebar={
+                <Sidebar
+                  title="系列講座"
+                  routes={routesSpeaks}
+                />
+              }
               page={route.data}
             />
           }
         />    
-
       ))}
     </Switch>    
   )
-}
-
-function Sidebar() {
-  return (
-    <div>
-      <h3>系列講座</h3>
-      <div class="navmenu speaks">
-        <ul>
-          {routesSpeaks.map((route, i) =>
-            <li>
-              <SidebarItem
-                itemId={route.itemId}
-                title={route.title}
-                url={route.path}
-              />
-            </li>
-          )}
-        </ul>
-      </div>
-    </div>
-  )
-}
-
-class SidebarItem extends Component {
-  render() {
-    return (
-      <Link to={`${this.props.url}`} class="speak-id">
-        <Row className="py-2">
-          <span class="number">{ this.props.itemId }</span>
-          <Col>{ this.props.title }</Col>
-        </Row>
-      </Link>
-    )
-  }
 }
