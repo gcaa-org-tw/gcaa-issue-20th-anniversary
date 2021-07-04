@@ -95,7 +95,7 @@ function Speaks() {
         </Switch>
       </div>
       <div class="row justify-content-evenly">
-        <div class="col-md-2 col-sm-4">
+        <div class="col-md-2 col-sm-4 order-md-first order-sm-last">
           <NavMenuSpeaks match={match.url}/>
         </div>
         <div class="col-md-6 col-sm-8">
@@ -106,7 +106,7 @@ function Speaks() {
           </Route>
           </Switch>
         </div>
-        <div class="col-md-2 col-sm-4">
+        <div class="col-md-2 col-sm-4 order-md-last order-sm-first">
           <Switch>
           <Route path={`${match.path}/:speakId`}>
             <PageSpeakers />
