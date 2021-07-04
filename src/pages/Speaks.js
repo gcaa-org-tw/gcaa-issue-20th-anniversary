@@ -29,7 +29,7 @@ class NavItemSpeak extends Component {
 class MarkdownSpeak extends Component {
   render() {
     return (
-      <div>
+      <div class="text-break">
         <ReactMarkdown>
           { this.props.content }
         </ReactMarkdown>
