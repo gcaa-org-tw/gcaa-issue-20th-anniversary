@@ -8,7 +8,7 @@ class CardCTA extends Component {
   render() {
     return (
       <div class="container">
-        <img src="./../donation.jpg" style={style} />
+        <img src="donation.jpg" style={style} />
       </div>
     )
   }
