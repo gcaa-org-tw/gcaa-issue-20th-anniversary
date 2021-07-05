@@ -59,8 +59,8 @@ function Exhibition() {
     <Container className="my-5">
       <Row className="justify-content-center align-items-center">
         <Col className="col-11 col-sm-8 text-center">
-          <h1>藝術與土地的匯流 綠盟20藝術公益聯展</h1>
-          <h2>綠盟20藝術公益聯展圓滿落幕</h2>
+          <h1>藝術與土地的匯流</h1>
+          <h2>綠盟20藝術公益聯展</h2>
         </Col>
       </Row>
       <ImageGallery items={data} />
