@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function SocialMovementXMusic() {
   return ({
@@ -10,10 +11,10 @@ export default function SocialMovementXMusic() {
   })
 }
 
-const speakers = (<div>
+const speakers = (<Row>
   <Avatar name="童智偉" avatarUrl="img/avatar/s4_tung.jpg"/>
   <Avatar name="吳志寧" avatarUrl="img/avatar/s4_wu.jpg"/>
-</div>)
+</Row>)
 
 const content = `
 > 撰文／賴品瑀

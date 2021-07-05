@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function SocialMovementXFilms() {
   return ({
@@ -10,10 +11,10 @@ export default function SocialMovementXFilms() {
   })
 }
 
-const speakers = (<div>
+const speakers = (<Row>
   <Avatar name="鄭有傑" avatarUrl="img/avatar/s6_cheng.jpg"/>
   <Avatar name="林木材" avatarUrl="img/avatar/s6_lin.jpg"/>
-</div>)
+</Row>)
 
 const content = `
 > 撰文／賴品瑀

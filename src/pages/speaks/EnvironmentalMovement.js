@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function EnvironmentalMovement() {
   return ({
@@ -10,10 +11,10 @@ export default function EnvironmentalMovement() {
   })
 }
 
-const speakers = (<div>
+const speakers = (<Row>
   <Avatar name="林聖崇" avatarUrl="img/avatar/s1_linsc.jpg"/>
   <Avatar name="林瓊華" avatarUrl="img/avatar/s1_linch.jpg"/>
-</div>)
+</Row>)
 
 const content = `
 > 撰文／賴品瑀

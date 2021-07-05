@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function TamSuiRiver() {
   return ({
@@ -10,11 +11,11 @@ export default function TamSuiRiver() {
   })
 }
 
-const speakers = (<div>
+const speakers = (<Row>
   <Avatar name="陳建志" avatarUrl="img/avatar/s3_chen.jpg"/>
   <Avatar name="張岱屏" avatarUrl="img/avatar/s3_chang.jpg"/>
   <Avatar name="李永展" avatarUrl="img/avatar/s3_lee.jpg"/>
-</div>)
+</Row>)
 
 const content = `
 > 撰文／賴品瑀

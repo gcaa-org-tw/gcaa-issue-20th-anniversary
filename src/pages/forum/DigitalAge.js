@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function DigitalAge() {
   return ({
@@ -10,12 +11,12 @@ export default function DigitalAge() {
   })
 }
 
-const speakers = (<div>
-  <Avatar name="杜文苓" avatarUrl="img/avatar/f2_tu.jpg"/>
-  <Avatar name="曾虹文" avatarUrl="img/avatar/f2_tseng.jpg"/>
-  <Avatar name="耿璐" avatarUrl="img/avatar/f2_ken.jpg"/>
-  <Avatar name="林韋廷" avatarUrl="img/avatar/f2_lin.jpg"/>
-</div>)
+const speakers = (<Row>
+  <Avatar name="杜文苓" desc="政治大學公共行政系教授" avatarUrl="img/avatar/f2_tu.jpg"/>
+  <Avatar name="曾虹文" desc="綠色公民行動聯盟副秘書長" avatarUrl="img/avatar/f2_tseng.jpg"/>
+  <Avatar name="耿璐"   desc="開放文化基金會執行秘書" avatarUrl="img/avatar/f2_ken.jpg"/>
+  <Avatar name="林韋廷" desc="工業技術研究院綠能與環境研究所研究員" avatarUrl="img/avatar/f2_lin.jpg"/>
+</Row>)
 
 
 const content = `

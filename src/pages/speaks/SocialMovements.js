@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function SocialMovements() {
   return ({
@@ -10,11 +11,11 @@ export default function SocialMovements() {
   })
 }
 
-const speakers = (<div>
+const speakers = (<Row>
   <Avatar name="施逸翔" avatarUrl="img/avatar/s5_shi.jpg"/>
   <Avatar name="周于萱" avatarUrl="img/avatar/s5_chou.jpg"/>
   <Avatar name="吳靜如" avatarUrl="img/avatar/s5_wu.jpg"/>
-</div>)
+</Row>)
 
 const content = `
 > 撰文／賴品瑀
