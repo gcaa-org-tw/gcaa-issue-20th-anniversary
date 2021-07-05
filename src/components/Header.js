@@ -3,7 +3,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import ButtonDonation from "./ButtonDonation";
 
-function Header(props) {
+export default function Header(props) {
   return (
     <Navbar expand="lg" sticky="top">
       <Container fluid>
@@ -23,5 +23,3 @@ function Header(props) {
     </Navbar>
   )
 }
-
-export default Header

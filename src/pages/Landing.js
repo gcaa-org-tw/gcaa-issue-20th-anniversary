@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 
 const styleLanding = {
   backgroundColor: 'grey',
-  backgroundImage: 'url("img/landing.jpg")',
+  backgroundImage: 'url("img/concert/concert-1.jpg")',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: '50%',
   backgroundSize: 'cover',
