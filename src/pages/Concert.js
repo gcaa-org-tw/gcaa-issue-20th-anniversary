@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap"
 import ImageGallery from 'react-image-gallery';
+import CardCTA from "../components/CardCTA";
 
 function imageData(imageId, desc) {
   var data = {
@@ -93,6 +94,11 @@ export default function Concert() {
         </Col>
       </Row>
       <ImageGallery items={data} />
+      <Row className="justify-content-center align-items-center">
+        <Col className="col-11 col-md-8 col-lg-6">
+          <CardCTA />
+        </Col>
+      </Row>
     </Container>
   )
 }

@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap"
 import ImageGallery from 'react-image-gallery';
 import Markdown from "../components/Markdown";
+import CardCTA from "../components/CardCTA";
 
 function imageData(filename, desc) {
   var data = {
@@ -24,8 +25,6 @@ const images = [
 const data = images.map(e => imageData(e.filename, e.desc))
 
 const texts = `
-> 撰文／曾虹文
-
 集結16位藝術家、27件參展作品的「綠
 盟20藝術公益聯展」，於10月18日圓滿落幕。
 由發起人之一的版畫家楊忠銘主持開幕導覽揭開
@@ -51,6 +50,8 @@ const texts = `
 轉型及污染治理的工作，也期待藉由更多藝術交
 流讓社會大眾感受自然之美，從美感經驗中產生
 環境永續的意識，擴大公民行動的力量。
+
+> 撰文／曾虹文
 `
 
 function Exhibition() {
@@ -66,6 +67,11 @@ function Exhibition() {
       <Row className="justify-content-center align-items-center pt-4">
         <Col className="col-11 col-sm-8">
           <Markdown content={texts} />
+        </Col>
+      </Row>
+      <Row className="justify-content-center align-items-center">
+        <Col className="col-11 col-md-8 col-lg-6">
+          <CardCTA />
         </Col>
       </Row>
     </Container>
