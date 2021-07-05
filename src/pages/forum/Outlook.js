@@ -11,11 +11,11 @@ export default function Outlook() {
 }
 
 const speakers = (<div>
-  <Avatar name="賴偉傑" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="李根政" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="詹順貴" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="朱增宏" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="林聖崇" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="賴偉傑" avatarUrl="img/avatar/f1_lai.jpg"/>
+  <Avatar name="李根政" avatarUrl="img/avatar/f1_lee.jpg"/>
+  <Avatar name="詹順貴" avatarUrl="img/avatar/f1_chan.jpg"/>
+  <Avatar name="朱增宏" avatarUrl="img/avatar/f1_chu.jpg"/>
+  <Avatar name="林聖崇" avatarUrl="img/avatar/f1_lin.jpg"/>
   <Avatar name="陳曼麗" avatarUrl="img/avatar/person-circle.svg"/>
 </div>)
 

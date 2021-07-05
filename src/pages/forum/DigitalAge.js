@@ -11,10 +11,10 @@ export default function DigitalAge() {
 }
 
 const speakers = (<div>
-  <Avatar name="杜文苓" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="曾虹文" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="耿璐" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="林韋廷" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="杜文苓" avatarUrl="img/avatar/f2_tu.jpg"/>
+  <Avatar name="曾虹文" avatarUrl="img/avatar/f2_tseng.jpg"/>
+  <Avatar name="耿璐" avatarUrl="img/avatar/f2_ken.jpg"/>
+  <Avatar name="林韋廷" avatarUrl="img/avatar/f2_lin.jpg"/>
 </div>)
 
 

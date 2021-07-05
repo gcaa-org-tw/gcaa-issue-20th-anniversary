@@ -11,10 +11,10 @@ export default function Sustainability() {
 }
 
 const speakers = (<div>
-  <Avatar name="戴興盛" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="魏揚" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="李易昆" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="陳惠萍" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="趙家瑋" avatarUrl="img/avatar/f3_chao.jpg"/>
+  <Avatar name="魏揚" avatarUrl="img/avatar/f3_wei.jpg"/>
+  <Avatar name="李易昆" avatarUrl="img/avatar/f3_lee.jpg"/>
+  <Avatar name="陳惠萍" avatarUrl="img/avatar/f3_chen.jpg"/>
 </div>)
 
 const content = `
