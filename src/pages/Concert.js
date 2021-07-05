@@ -1,4 +1,3 @@
-import react, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap"
 import ImageGallery from 'react-image-gallery';
 
