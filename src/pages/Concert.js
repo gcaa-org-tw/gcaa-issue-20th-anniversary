@@ -84,7 +84,7 @@ const texts = `
 export default function Concert() {
   return (
     <Container className="my-5">
-      <Row className="row justify-content-center align-items-center">
+      <Row className="justify-content-center align-items-center">
         <Col className="col-11 col-sm-8 text-center">
           <h1>綠盟20 破浪前行</h1>
           <h2>20週年感恩音樂會活動花絮</h2>
