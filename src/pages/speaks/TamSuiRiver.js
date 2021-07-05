@@ -12,9 +12,9 @@ export default function TamSuiRiver() {
 }
 
 const speakers = (<Row>
-  <Avatar name="陳建志" avatarUrl="img/avatar/s3_chen.jpg"/>
-  <Avatar name="張岱屏" avatarUrl="img/avatar/s3_chang.jpg"/>
-  <Avatar name="李永展" avatarUrl="img/avatar/s3_lee.jpg"/>
+  <Avatar name="陳建志" desc="前台灣永續聯盟秘書長、台灣綠色公民行動聯盟秘書長、理事" avatarUrl="img/avatar/s3_chen.jpg"/>
+  <Avatar name="張岱屏" desc="公共電視《我們的島》節目企劃" avatarUrl="img/avatar/s3_chang.jpg"/>
+  <Avatar name="李永展" desc="中華經濟研究院研究員" avatarUrl="img/avatar/s3_lee.jpg"/>
 </Row>)
 
 const content = `

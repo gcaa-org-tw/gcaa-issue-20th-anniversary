@@ -12,7 +12,7 @@ export default function ChangTseChou() {
 }
 
 const speakers = (<Row>
-  <Avatar name="張則周" avatarUrl="img/avatar/s2_chang.jpg"/>
+  <Avatar name="張則周" desc="台大農化系退休教授" avatarUrl="img/avatar/s2_chang.jpg"/>
 </Row>)
 
 const content = `

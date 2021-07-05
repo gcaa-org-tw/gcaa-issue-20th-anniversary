@@ -12,9 +12,10 @@ export default function SocialMovements() {
 }
 
 const speakers = (<Row>
-  <Avatar name="施逸翔" avatarUrl="img/avatar/s5_shi.jpg"/>
-  <Avatar name="周于萱" avatarUrl="img/avatar/s5_chou.jpg"/>
-  <Avatar name="吳靜如" avatarUrl="img/avatar/s5_wu.jpg"/>
+  <Avatar name="施逸翔" desc="台灣人權促進會秘書長" avatarUrl="img/avatar/s5_shi.jpg"/>
+  <Avatar name="周于萱" desc="婦女新知基金會秘書長" avatarUrl="img/avatar/s5_chou.jpg"/>
+  <Avatar name="林欣怡" desc="台灣廢除死刑推動聯盟執行長" avatarUrl="img/avatar/s5_lin.jpg"/>
+  <Avatar name="吳靜如" desc="台灣國際勞工協會研究員" avatarUrl="img/avatar/s5_wu.jpg"/>
 </Row>)
 
 const content = `

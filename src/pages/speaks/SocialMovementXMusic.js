@@ -12,8 +12,8 @@ export default function SocialMovementXMusic() {
 }
 
 const speakers = (<Row>
-  <Avatar name="童智偉" avatarUrl="img/avatar/s4_tung.jpg"/>
-  <Avatar name="吳志寧" avatarUrl="img/avatar/s4_wu.jpg"/>
+  <Avatar name="童智偉" desc="野果創意工作室負責人，鼓手、音控師，最常在凱道上做場過夜的男人（別名幕後黑手）" avatarUrl="img/avatar/s4_tung.jpg"/>
+  <Avatar name="吳志寧" desc="切音樂電影有限公司負責人，創作音樂人、929樂團主唱" avatarUrl="img/avatar/s4_wu.jpg"/>
 </Row>)
 
 const content = `

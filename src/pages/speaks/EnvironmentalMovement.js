@@ -12,8 +12,8 @@ export default function EnvironmentalMovement() {
 }
 
 const speakers = (<Row>
-  <Avatar name="林聖崇" avatarUrl="img/avatar/s1_linsc.jpg"/>
-  <Avatar name="林瓊華" avatarUrl="img/avatar/s1_linch.jpg"/>
+  <Avatar name="林聖崇" desc="資深環運人，生態保育聯盟總召集人" avatarUrl="img/avatar/s1_linsc.jpg"/>
+  <Avatar name="林瓊華" desc="國立台北藝術大學通識教育中心兼任助理教授，曾任綠色公民行動聯盟理事長" avatarUrl="img/avatar/s1_linch.jpg"/>
 </Row>)
 
 const content = `

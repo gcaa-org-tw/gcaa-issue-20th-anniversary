@@ -12,8 +12,8 @@ export default function SocialMovementXFilms() {
 }
 
 const speakers = (<Row>
-  <Avatar name="鄭有傑" avatarUrl="img/avatar/s6_cheng.jpg"/>
-  <Avatar name="林木材" avatarUrl="img/avatar/s6_lin.jpg"/>
+  <Avatar name="鄭有傑" desc="導演、編劇、演員與製作人" avatarUrl="img/avatar/s6_cheng.jpg"/>
+  <Avatar name="林木材" desc="台灣國際紀錄片影展策展人" avatarUrl="img/avatar/s6_lin.jpg"/>
 </Row>)
 
 const content = `
