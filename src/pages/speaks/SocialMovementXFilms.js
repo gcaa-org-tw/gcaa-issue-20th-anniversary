@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function SocialMovementXFilms() {
   return ({
@@ -10,10 +11,10 @@ export default function SocialMovementXFilms() {
   })
 }
 
-const speakers = (<div>
-  <Avatar name="鄭有傑" avatarUrl="img/avatar/s6_cheng.jpg"/>
-  <Avatar name="林木材" avatarUrl="img/avatar/s6_lin.jpg"/>
-</div>)
+const speakers = (<Row>
+  <Avatar name="鄭有傑" desc="導演、編劇、演員與製作人" avatarUrl="img/avatar/s6_cheng.jpg"/>
+  <Avatar name="林木材" desc="台灣國際紀錄片影展策展人" avatarUrl="img/avatar/s6_lin.jpg"/>
+</Row>)
 
 const content = `
 > 撰文／賴品瑀
@@ -64,7 +65,7 @@ const content = `
 子賣不進去中國，而開始自我審查。「除了台灣還
 有哪個國家不能拍自己的國家？」鄭有傑如此回
 應主席侯孝賢「要拍台灣特有的」這個考題，鄭
-有傑表示， 大家可能一直到了2016年周子瑜事
+有傑表示，大家可能一直到了2016年周子瑜事
 件，才重視到中國那些明著來的限制規定，但更
 早之前就已經有這些潛規則，他曾在會議中想要
 討論這個問題，卻被前輩提醒「不要談」，「如果

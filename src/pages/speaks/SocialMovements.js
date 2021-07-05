@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function SocialMovements() {
   return ({
@@ -10,11 +11,12 @@ export default function SocialMovements() {
   })
 }
 
-const speakers = (<div>
-  <Avatar name="施逸翔" avatarUrl="img/avatar/s5_shi.jpg"/>
-  <Avatar name="周于萱" avatarUrl="img/avatar/s5_chou.jpg"/>
-  <Avatar name="吳靜如" avatarUrl="img/avatar/s5_wu.jpg"/>
-</div>)
+const speakers = (<Row>
+  <Avatar name="施逸翔" desc="台灣人權促進會秘書長" avatarUrl="img/avatar/s5_shi.jpg"/>
+  <Avatar name="周于萱" desc="婦女新知基金會秘書長" avatarUrl="img/avatar/s5_chou.jpg"/>
+  <Avatar name="林欣怡" desc="台灣廢除死刑推動聯盟執行長" avatarUrl="img/avatar/s5_lin.jpg"/>
+  <Avatar name="吳靜如" desc="台灣國際勞工協會研究員" avatarUrl="img/avatar/s5_wu.jpg"/>
+</Row>)
 
 const content = `
 > 撰文／賴品瑀
@@ -35,11 +37,11 @@ const content = `
 就需要很多人的參與。」台灣人權促進會秘書長
 施逸翔回顧，在解嚴前就已經成立的台權會過去
 歷史，早期便參與了原民、婦女權益、搶救雛妓、
-廢除刑法一百條、阻止人口販賣等議題，更在
-2000年跟性別團體合辦「人權婚禮先修班」，提
+廢除刑法一百條、阻止人口販賣等議題，更在2000年
+跟性別團體合辦「人權婚禮先修班」，提
 醒當時的政府婚姻除了遵守一夫一妻外，還有更
 多思維需要再進步。近年為了聲援婚姻平權，台
-權會更將會旗與Logo 調整為六色彩虹，宣告其
+權會更將會旗與Logo調整為六色彩虹，宣告其
 挺同立場。
 
 如今在倡議上，不同團體仍需要分工，一起打組
@@ -52,7 +54,7 @@ const content = `
 在爭取婚姻平權上，也促成人權與性別團體合作，
 互相結盟協助。回顧周于萱自身的經歷，即是從
 聲援勞權、土地開始參與起公共議題，一度在「聲
-援別人之外怎麼定義我自己」迷惘， 但在負責「鐵
+援別人之外怎麼定義我自己」迷惘，但在負責「鐵
 馬影展」的幾年中得到養分，透過影片瞭解了國
 內外社運的異同，更體會了議題並非第一線在街
 頭推擠抗爭，還有很多的途徑與角色。「這並不是
@@ -62,7 +64,7 @@ const content = `
 
 ### 看見彼此的需求 從聲援走向對話與合作
 
-近年包括反核、 同志大遊行、氣候變遷的街頭行
+近年包括反核、同志大遊行、氣候變遷的街頭行
 動，都可看到外籍移工參與的身影，是台灣國際
 勞工協會（TIWA）盡力捲動他們參與。TIWA研
 究員吳靜如表示，各方開始在議題上互相理解對

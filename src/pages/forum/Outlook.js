@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function Outlook() {
   return ({
@@ -10,14 +11,14 @@ export default function Outlook() {
   })
 }
 
-const speakers = (<div>
-  <Avatar name="賴偉傑" avatarUrl="img/avatar/f1_lai.jpg"/>
-  <Avatar name="李根政" avatarUrl="img/avatar/f1_lee.jpg"/>
-  <Avatar name="詹順貴" avatarUrl="img/avatar/f1_chan.jpg"/>
-  <Avatar name="朱增宏" avatarUrl="img/avatar/f1_chu.jpg"/>
-  <Avatar name="林聖崇" avatarUrl="img/avatar/f1_lin.jpg"/>
-  <Avatar name="陳曼麗" avatarUrl="img/avatar/person-circle.svg"/>
-</div>)
+const speakers = (<Row>
+  <Avatar name="賴偉傑" desc="綠色公民行動聯盟理事長" avatarUrl="img/avatar/f1_lai.jpg"/>
+  <Avatar name="李根政" desc="地球公民基金會執行長" avatarUrl="img/avatar/f1_lee.jpg"/>
+  <Avatar name="詹順貴" desc="全國律師會副會長" avatarUrl="img/avatar/f1_chan.jpg"/>
+  <Avatar name="朱增宏" desc="社團法人台灣動物社會研究會執行長" avatarUrl="img/avatar/f1_chu.jpg"/>
+  <Avatar name="林聖崇" desc="資深環運人，生態保育聯盟總召集人" avatarUrl="img/avatar/f1_lin.jpg"/>
+  <Avatar name="陳曼麗" desc="曾任主婦聯盟環境保護基金會董事長、前立委" avatarUrl="img/avatar/person-circle.svg"/>
+</Row>)
 
 const content = `
 > 撰文／王舜薇

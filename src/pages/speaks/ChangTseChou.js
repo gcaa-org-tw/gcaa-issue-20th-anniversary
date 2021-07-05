@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function ChangTseChou() {
   return ({
@@ -10,9 +11,9 @@ export default function ChangTseChou() {
   })
 }
 
-const speakers = (<div>
-  <Avatar name="張則周" avatarUrl="img/avatar/s2_chang.jpg"/>
-</div>)
+const speakers = (<Row>
+  <Avatar name="張則周" desc="台大農化系退休教授" avatarUrl="img/avatar/s2_chang.jpg"/>
+</Row>)
 
 const content = `
 > 撰文／賴品瑀

@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import { Row } from 'react-bootstrap'
 
 export default function Sustainability() {
   return ({
@@ -10,12 +11,12 @@ export default function Sustainability() {
   })
 }
 
-const speakers = (<div>
-  <Avatar name="趙家瑋" avatarUrl="img/avatar/f3_chao.jpg"/>
-  <Avatar name="魏揚" avatarUrl="img/avatar/f3_wei.jpg"/>
-  <Avatar name="李易昆" avatarUrl="img/avatar/f3_lee.jpg"/>
-  <Avatar name="陳惠萍" avatarUrl="img/avatar/f3_chen.jpg"/>
-</div>)
+const speakers = (<Row>
+  <Avatar name="趙家瑋" desc="綠色公民行動聯盟常務理事" avatarUrl="img/avatar/f3_chao.jpg"/>
+  <Avatar name="魏揚" desc="綠色公民行動聯盟研究員" avatarUrl="img/avatar/f3_wei.jpg"/>
+  <Avatar name="李易昆" desc="庶民發電學習社區合作社理事主席" avatarUrl="img/avatar/f3_lee.jpg"/>
+  <Avatar name="陳惠萍" desc="陽光伏特家共同創辦人" avatarUrl="img/avatar/f3_chen.jpg"/>
+</Row>)
 
 const content = `
 > 撰文／劉如意
