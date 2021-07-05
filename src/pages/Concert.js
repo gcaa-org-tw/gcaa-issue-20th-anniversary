@@ -3,7 +3,7 @@ import ImageGallery from 'react-image-gallery';
 
 function imageData(imageId, desc) {
   var data = {
-    original: 'img/concert/concert-' + imageId + '.jpg/',
+    original: 'img/concert/concert-' + imageId + '.jpg',
     thumbnail: 'img/concert/thumbnail-concert-' + imageId + '.jpg',
     description: desc,
   }
