@@ -96,6 +96,19 @@ blockquote {
   }
 }
 
+.image-gallery {
+  .image-gallery-icon:hover {
+    color: $primary !important;
+  }
+  .image-gallery-thumbnail {
+    &.active,
+    &:focus,
+    &:hover {
+      border-color: $primary !important;
+    }
+  }
+}
+
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
 
