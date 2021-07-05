@@ -68,8 +68,8 @@ export default function Speaks() {
               page={route.data}
             />
           }
-        />    
+        />
       ))}
-    </Switch>    
+    </Switch>
   )
 }

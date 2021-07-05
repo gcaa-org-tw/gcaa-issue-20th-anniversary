@@ -8,8 +8,8 @@ class Footer extends Component {
         <Container className="py-5">
           <Row className="justify-content-center">
             <Col xs={12} sm={3} className="mb-4 text-center">
-              <img 
-                src="img/logo.png" 
+              <img
+                src="img/logo.png"
                 style={{ width: '100px', height: 'auto' }}
                 alt="綠色公民行動聯盟LOGO"
               />

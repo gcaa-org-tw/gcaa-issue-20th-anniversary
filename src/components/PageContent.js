@@ -45,14 +45,14 @@ function LandingImg(props) {
   const style = {
     backgroundImage: 'url(' + props.imgSrc + ')',
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat', 
-    backgroundPosition: '50%',     
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: '50%',
     backgroundColor: 'lightgray',
     width: '100%',
     minHeight: '60vh',
     maxHeight: '60vh',
     marginBottom: '2em',
-  };  
+  };
   return (
     <Container style={style}></Container>
   )

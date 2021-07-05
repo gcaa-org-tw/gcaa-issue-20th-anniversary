@@ -17,8 +17,8 @@ function Landing(props) {
           <Container fluid className="vh-100 align-middle">
             <NavLink to={`/speaks`} style={{ textDecoration: 'none' }}>
             <Row className="vh-100 align-items-center text-center">
-              <h1 style={{ 
-                color: 'white', 
+              <h1 style={{
+                color: 'white',
                 textDecoration: 'none',
                 fontWeight: '700',
                 textShadow: '0 1px 1px rgba(0,0,0,.6)',
@@ -29,7 +29,7 @@ function Landing(props) {
             </NavLink>
           </Container>
       </div>
-    </Route>    
+    </Route>
   )
 }
 

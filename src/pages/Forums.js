@@ -47,8 +47,8 @@ export default function Forums() {
               page={route.data}
             />
           }
-        />    
+        />
       ))}
-    </Switch>    
+    </Switch>
   )
 }
