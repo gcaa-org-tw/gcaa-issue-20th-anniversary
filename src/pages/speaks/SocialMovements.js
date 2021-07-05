@@ -7,7 +7,7 @@ export default function SocialMovements() {
     subtitle : `社運議題的交織與協力`,
     content : content,
     speakers : speakers,
-    imgSrc : 'img/landing.jpg',
+    imgSrc : 'img/speaks/social-movements.jpg',
   })
 }
 
