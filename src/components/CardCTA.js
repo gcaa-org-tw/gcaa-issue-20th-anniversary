@@ -15,6 +15,7 @@ class CardCTA extends Component {
             <img 
               src="https://www.getillustrations.com/packs/tuesday-minimal-illustrations-pack/scenes/_1x/nature%20_%20man,%20carry,%20log,%20wood,%20teamwork,%20outdoors_md.png" 
               style={{ width: '100%' }}
+              alt="陪伴綠盟走向下一個二十年"
             />
           </Col>
         </Row>
