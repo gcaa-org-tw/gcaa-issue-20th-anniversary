@@ -8,7 +8,11 @@ export default function PageContent(props) {
     <Container className="my-5">
       <Row className="justify-content-center align-items-center">
         <Col className="col-11 col-sm-8">
-          <Title title={ props.page.title } subtitle={props.page.subtitle} />
+          <Title
+            header={ props.page.title }
+            title={ props.page.subtitle }
+            subtitle={ props.title }
+          />
         </Col>
       </Row>
       <Row className="justify-content-center align-items-center">
@@ -35,6 +39,7 @@ export default function PageContent(props) {
 function Title(props) {
   return (
     <Container className="text-center pt-2 pt-md-5">
+      <h2>{ props.header }</h2>
       <h1>{ props.title }</h1>
       <h2>{ props.subtitle }</h2>
     </Container>

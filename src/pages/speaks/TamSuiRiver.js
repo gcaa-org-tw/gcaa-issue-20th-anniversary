@@ -2,8 +2,8 @@ import Avatar from '../../components/Avatar'
 
 export default function TamSuiRiver() {
   return ({
-    title : `淡水河今昔變遷二十年`,
-    subtitle : `盼河川串起國土計畫寬廣可能`,
+    title : ``,
+    subtitle : `淡水河今昔變遷二十年`,
     content : content,
     speakers : speakers,
     imgSrc : 'img/speaks/tamsui-river.jpg',
