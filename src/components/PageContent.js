@@ -65,6 +65,6 @@ function LandingImg(props) {
 
 function KeynoteSpeakers(props) {
   return (
-    <div>{ props.speakers }</div>
+    <div class="sticky-sidebar">{ props.speakers }</div>
   )
 }

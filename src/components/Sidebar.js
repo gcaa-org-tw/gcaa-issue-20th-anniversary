@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 
 export default function Sidebar(props) {
   return (
-    <div>
+    <div class="sticky-sidebar">
       <h3>{props.title}</h3>
       <div class="navmenu speaks">
         <ul>
