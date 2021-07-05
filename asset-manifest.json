@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/gcaa-issue-20th-anniversary/static/css/main.1cdef635.chunk.css",
-    "main.js": "/gcaa-issue-20th-anniversary/static/js/main.8314b173.chunk.js",
-    "main.js.map": "/gcaa-issue-20th-anniversary/static/js/main.8314b173.chunk.js.map",
+    "main.js": "/gcaa-issue-20th-anniversary/static/js/main.2e93e4df.chunk.js",
+    "main.js.map": "/gcaa-issue-20th-anniversary/static/js/main.2e93e4df.chunk.js.map",
     "runtime-main.js": "/gcaa-issue-20th-anniversary/static/js/runtime-main.3afc7fc1.js",
     "runtime-main.js.map": "/gcaa-issue-20th-anniversary/static/js/runtime-main.3afc7fc1.js.map",
-    "static/js/2.8812597d.chunk.js": "/gcaa-issue-20th-anniversary/static/js/2.8812597d.chunk.js",
-    "static/js/2.8812597d.chunk.js.map": "/gcaa-issue-20th-anniversary/static/js/2.8812597d.chunk.js.map",
+    "static/js/2.bc0188c4.chunk.js": "/gcaa-issue-20th-anniversary/static/js/2.bc0188c4.chunk.js",
+    "static/js/2.bc0188c4.chunk.js.map": "/gcaa-issue-20th-anniversary/static/js/2.bc0188c4.chunk.js.map",
     "static/js/3.309c91a7.chunk.js": "/gcaa-issue-20th-anniversary/static/js/3.309c91a7.chunk.js",
     "static/js/3.309c91a7.chunk.js.map": "/gcaa-issue-20th-anniversary/static/js/3.309c91a7.chunk.js.map",
     "index.html": "/gcaa-issue-20th-anniversary/index.html",
     "static/css/main.1cdef635.chunk.css.map": "/gcaa-issue-20th-anniversary/static/css/main.1cdef635.chunk.css.map",
-    "static/js/2.8812597d.chunk.js.LICENSE.txt": "/gcaa-issue-20th-anniversary/static/js/2.8812597d.chunk.js.LICENSE.txt"
+    "static/js/2.bc0188c4.chunk.js.LICENSE.txt": "/gcaa-issue-20th-anniversary/static/js/2.bc0188c4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3afc7fc1.js",
-    "static/js/2.8812597d.chunk.js",
+    "static/js/2.bc0188c4.chunk.js",
     "static/css/main.1cdef635.chunk.css",
-    "static/js/main.8314b173.chunk.js"
+    "static/js/main.2e93e4df.chunk.js"
   ]
 }
