@@ -11,11 +11,13 @@ export default function SocialMovementXMusic() {
 }
 
 const speakers = (<div>
-  <Avatar name="童智偉" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="吳志寧" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="童智偉" avatarUrl="img/avatar/s4_tung.jpg"/>
+  <Avatar name="吳志寧" avatarUrl="img/avatar/s4_wu.jpg"/>
 </div>)
 
 const content = `
+> 撰文／賴品瑀
+
 「你知道你自己是誰嗎／你勇敢的面對自己了嗎／你
 也想要一個答案嗎／因為沒有人能回答」以巴奈的
 歌聲起頭，音樂人吳志寧、童智偉受綠盟講座之

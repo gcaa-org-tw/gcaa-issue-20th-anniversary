@@ -11,11 +11,13 @@ export default function SocialMovementXFilms() {
 }
 
 const speakers = (<div>
-  <Avatar name="鄭有傑" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="林木材" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="鄭有傑" avatarUrl="img/avatar/s6_cheng.jpg"/>
+  <Avatar name="林木材" avatarUrl="img/avatar/s6_lin.jpg"/>
 </div>)
 
 const content = `
+> 撰文／賴品瑀
+
 「我只能當我自己，也許是好一點的鄭有傑，但我
 只能是我自己。」
 

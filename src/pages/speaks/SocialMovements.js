@@ -11,12 +11,14 @@ export default function SocialMovements() {
 }
 
 const speakers = (<div>
-  <Avatar name="施逸翔" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="周于萱" avatarUrl="img/avatar/person-circle.svg"/>
-  <Avatar name="吳靜如" avatarUrl="img/avatar/person-circle.svg"/>
+  <Avatar name="施逸翔" avatarUrl="img/avatar/s5_shi.jpg"/>
+  <Avatar name="周于萱" avatarUrl="img/avatar/s5_chou.jpg"/>
+  <Avatar name="吳靜如" avatarUrl="img/avatar/s5_wu.jpg"/>
 </div>)
 
 const content = `
+> 撰文／賴品瑀
+
 「看到差異的能力比統合還重要」綠盟在20週年
 系列講座「不只是環運：社運議題的交織與協力」
 中，由來自人權運動、性別運動、勞工運動、環
