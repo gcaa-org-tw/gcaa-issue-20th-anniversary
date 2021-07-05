@@ -2,11 +2,11 @@ import Avatar from '../../components/Avatar'
 
 export default function DigitalAge() {
   return ({
-    title : `2050臺灣想像：從環境正義到永續轉型`,
-    subtitle : `數位時代下的環境賦權：社會治理挑戰國家管理`,
+    title : `2050臺灣想像`,
+    subtitle : `從環境正義到永續轉型`,
     content : content,
     speakers : speakers,
-    imgSrc : 'img/speaks/tamsui-river.jpg',
+    imgSrc : 'img/forum/forum-2.jpg',
   })
 }
 

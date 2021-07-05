@@ -45,6 +45,7 @@ export default function Forums() {
                 />
               }
               page={route.data}
+              title={route.title}
             />
           }
         />

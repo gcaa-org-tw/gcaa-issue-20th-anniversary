@@ -2,8 +2,8 @@ import Avatar from '../../components/Avatar'
 
 export default function EnvironmentalMovement() {
   return ({
-    title : `我們與台灣環境運動交會的生命軌跡`,
-    subtitle : `從 80 年代走來 林聖崇、林瓊華 對談環運人生`,
+    title : `啟蒙與實踐`,
+    subtitle : `我們與台灣環境運動交會的生命軌跡`,
     content : content,
     speakers : speakers,
     imgSrc : 'img/speaks/env-movement.jpg',

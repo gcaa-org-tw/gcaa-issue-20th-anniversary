@@ -2,11 +2,11 @@ import Avatar from '../../components/Avatar'
 
 export default function Outlook() {
   return ({
-    title : `2050臺灣想像：從環境正義到永續轉型`,
-    subtitle : `共同前進－台灣環境運動的突圍與展望`,
+    title : `2050臺灣想像`,
+    subtitle : `從環境正義到永續轉型`,
     content : content,
     speakers : speakers,
-    imgSrc : 'img/speaks/tamsui-river.jpg',
+    imgSrc : 'img/forum/forum-1.jpg',
   })
 }
 

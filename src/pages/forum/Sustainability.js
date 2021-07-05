@@ -2,11 +2,11 @@ import Avatar from '../../components/Avatar'
 
 export default function Sustainability() {
   return ({
-    title : `2050臺灣想像：從環境正義到永續轉型`,
-    subtitle : `永續轉型的支持體系：從能源轉型到新發展想像`,
+    title : `2050臺灣想像`,
+    subtitle : `從環境正義到永續轉型`,
     content : content,
     speakers : speakers,
-    imgSrc : 'img/speaks/tamsui-river.jpg',
+    imgSrc : 'img/forum/forum-3.jpg',
   })
 }
 

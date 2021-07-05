@@ -2,8 +2,8 @@ import Avatar from '../../components/Avatar'
 
 export default function SocialMovements() {
   return ({
-    title:  `社社運議題的交織與協力`,
-    subtitle : `不只是湊人頭相挺　跨領域社運看見彼此　相扶持邁向未來`,
+    title:  `不只是環運`,
+    subtitle : `社運議題的交織與協力`,
     content : content,
     speakers : speakers,
     imgSrc : 'img/landing.jpg',
