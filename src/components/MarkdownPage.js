@@ -1,7 +1,9 @@
 import React  from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import Avatar, { SpeakersData } from './Avatar';
+import Avatar from './Avatar';
 import CardCTA from './CardCTA';
+
+const speakerData = require('../pages/speaker-data.json')
 
 export default function MarkdownPage(props) {
   const attr = props.attribute
@@ -50,8 +52,8 @@ export default function MarkdownPage(props) {
             {speakers.map((e) =>
               <Avatar
                 name={e}
-                desc={SpeakersData[e].desc}
-                avatarUrl={"img/avatar/" + SpeakersData[e].img}
+                desc={speakerData[e].desc}
+                avatarUrl={"img/avatar/" + speakerData[e].img}
               />
             )}
             </Row>
