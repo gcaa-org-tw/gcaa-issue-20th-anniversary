@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 
-function Avatar(props) {
+export default function Avatar(props) {
   return (
     <Col xs="6" className="mx-auto p-2 text-center">
       <img className="Avatar"
@@ -19,5 +19,3 @@ function Avatar(props) {
     </Col>
   );
 }
-
-export default Avatar

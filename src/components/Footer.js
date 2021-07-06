@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
-class Footer extends Component {
+export default class Footer extends Component {
   render() {
     return (
       <div class="bg-primary footer">
@@ -41,5 +41,3 @@ class Footer extends Component {
     )
   }
 }
-
-export default Footer

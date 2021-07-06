@@ -1,24 +1,14 @@
-import Avatar from '../../components/Avatar'
-import { Row } from 'react-bootstrap'
-
-export default function SocialMovements() {
-  return ({
-    title:  `不只是環運`,
-    subtitle : `社運議題的交織與協力`,
-    content : content,
-    speakers : speakers,
-    imgSrc : 'img/speaks/social-movements.jpg',
-  })
-}
-
-const speakers = (<Row>
-  <Avatar name="施逸翔" desc="台灣人權促進會秘書長" avatarUrl="img/avatar/s5_shi.jpg"/>
-  <Avatar name="周于萱" desc="婦女新知基金會秘書長" avatarUrl="img/avatar/s5_chou.jpg"/>
-  <Avatar name="林欣怡" desc="台灣廢除死刑推動聯盟執行長" avatarUrl="img/avatar/s5_lin.jpg"/>
-  <Avatar name="吳靜如" desc="台灣國際勞工協會研究員" avatarUrl="img/avatar/s5_wu.jpg"/>
-</Row>)
-
-const content = `
+---
+heading:  不只是環運
+subheading: 社運議題的交織與協力
+title: 不只是湊人頭相挺 跨領域社運看見彼此 相扶持邁向未來
+imgsrc: img/speaks/social-movements.jpg
+speakers:
+- 施逸翔
+- 周于萱
+- 林欣怡
+- 吳靜如
+---
 > 撰文／賴品瑀
 
 「看到差異的能力比統合還重要」綠盟在20週年
@@ -80,7 +70,6 @@ const content = `
 障礙團體曾經擔憂影響自身的權益，但經過社運
 團體的協助下，身心障礙團體與移工漸漸理解彼
 此，更能上街頭相挺為對方發聲，讓他非常感動。
-
 而環運與工運「紅綠」兩者長年分分合合，近年
 在違章工廠失火事件再現合作，環境破壞與勞權
 侵害，甚至消防員的生命安全互相綁在一起，各
@@ -107,4 +96,3 @@ const content = `
 因此第一次與廢死聯盟一起前往司法院抗議，也
 親身承受了一些民眾特地跑到記者會場謾罵嘲諷，
 體會了廢死議題所受的壓力。
-`

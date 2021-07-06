@@ -1,21 +1,12 @@
-import Avatar from '../../components/Avatar'
-import { Row } from 'react-bootstrap'
+---
+heading:  如何從草根中學習？
+subheading: 公益、生態、社會的漫長追尋
+title: 終身教育、終身學習 盼台灣素質提升 教授張則周再開講
+imgsrc: img/speaks/chang-tc.jpg
+speakers:
+- 張則周
+---
 
-export default function ChangTseChou() {
-  return ({
-    title:  `如何從草根中學習？`,
-    subtitle : `公益、生態、社會的漫長追尋`,
-    content : content,
-    speakers : speakers,
-    imgSrc : 'img/speaks/chang-tc.jpg',
-  })
-}
-
-const speakers = (<Row>
-  <Avatar name="張則周" desc="台大農化系退休教授" avatarUrl="img/avatar/s2_chang.jpg"/>
-</Row>)
-
-const content = `
 > 撰文／賴品瑀
 
 「大家都希望台灣變成讓人尊重、值得驕傲的國家，
@@ -64,7 +55,6 @@ const content = `
 張則周更認為自己的遭遇並非最悲慘，相比之下
 還是幸運的，反而，在受難過程中還是看到了許
 多胸懷正義、願意關心社會、願意犧牲的人。
-
 張則周在獄中認識的劉嘉武，在梨山平等國小擔
 任校長期間遭控從事地下政治活動，卻坦然面對
 被處死的命運，劉嘉武留下「人不單為了自己活，
@@ -140,4 +130,3 @@ const content = `
 他可以犯錯，但是必須要能討論」。更重要的是，
 國民都要有謙卑的態度與終身學習的意願。「這樣
 的話，社會不可能不進步。」
-`

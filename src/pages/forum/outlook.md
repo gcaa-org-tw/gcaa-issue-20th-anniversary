@@ -1,26 +1,16 @@
-import Avatar from '../../components/Avatar'
-import { Row } from 'react-bootstrap'
-
-export default function Outlook() {
-  return ({
-    title : `2050臺灣想像`,
-    subtitle : `從環境正義到永續轉型`,
-    content : content,
-    speakers : speakers,
-    imgSrc : 'img/forum/forum-1.jpg',
-  })
-}
-
-const speakers = (<Row>
-  <Avatar name="賴偉傑" desc="綠色公民行動聯盟理事長" avatarUrl="img/avatar/f1_lai.jpg"/>
-  <Avatar name="李根政" desc="地球公民基金會執行長" avatarUrl="img/avatar/f1_lee.jpg"/>
-  <Avatar name="詹順貴" desc="全國律師會副會長" avatarUrl="img/avatar/f1_chan.jpg"/>
-  <Avatar name="朱增宏" desc="社團法人台灣動物社會研究會執行長" avatarUrl="img/avatar/f1_chu.jpg"/>
-  <Avatar name="林聖崇" desc="資深環運人，生態保育聯盟總召集人" avatarUrl="img/avatar/f1_lin.jpg"/>
-  <Avatar name="陳曼麗" desc="曾任主婦聯盟環境保護基金會董事長、前立委" avatarUrl="img/avatar/person-circle.svg"/>
-</Row>)
-
-const content = `
+---
+heading: 2050臺灣想像
+subheading: 從環境正義到永續轉型
+title: 主題一：共同前進－台灣環境運動的突圍與展望
+imgsrc: img/forum/forum-1.jpg
+speakers:
+- 賴偉傑
+- 李根政
+- 詹順貴
+- 朱增宏
+- 林聖崇
+- 陳曼麗
+---
 > 撰文／王舜薇
 
 論壇第一個場次邀請六位環境運動前輩，從自身
@@ -217,4 +207,3 @@ const content = `
 打破既有比賽規則，由參與者共同決定適用的規
 則。就像現在要談2050年的願景，大家必須心
 平氣和地討論。
-`

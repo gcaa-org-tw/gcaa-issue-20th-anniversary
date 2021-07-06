@@ -12,7 +12,7 @@ export default function Sidebar(props) {
             <li>
               <SidebarItem
                 itemId={route.itemId}
-                title={route.title}
+                title={route.attr.title}
                 url={route.path}
               />
             </li>

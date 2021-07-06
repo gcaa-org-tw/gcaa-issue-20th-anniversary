@@ -1,22 +1,13 @@
-import Avatar from '../../components/Avatar'
-import { Row } from 'react-bootstrap'
+---
+heading:  社會運動的N次跨界
+subheading: 音樂人的搖滾社運路
+title: 放大街頭的公義之聲：童智偉、吳志寧回顧社運烽火年代
+imgsrc: img/speaks/social-movement-x-music.jpg
+speakers:
+- 童智偉
+- 吳志寧
+---
 
-export default function SocialMovementXMusic() {
-  return ({
-    title:  `社會運動的N次跨界`,
-    subtitle : `音樂人的搖滾社運路`,
-    content : content,
-    speakers : speakers,
-    imgSrc : 'img/speaks/social-movement-x-music.jpg',
-  })
-}
-
-const speakers = (<Row>
-  <Avatar name="童智偉" desc="野果創意工作室負責人，鼓手、音控師，最常在凱道上做場過夜的男人（別名幕後黑手）" avatarUrl="img/avatar/s4_tung.jpg"/>
-  <Avatar name="吳志寧" desc="切音樂電影有限公司負責人，創作音樂人、929樂團主唱" avatarUrl="img/avatar/s4_wu.jpg"/>
-</Row>)
-
-const content = `
 > 撰文／賴品瑀
 
 「你知道你自己是誰嗎／你勇敢的面對自己了嗎／你
@@ -85,7 +76,6 @@ YAMAHA「Powered Mixer」混音器作為第一台
 四期搶水，隻身在怪手面前靜坐阻擋，不久後人
 們紛紛趕到，童智偉的器材也加入現場，當場「開
 趴」聚集人群，並因此展開漫長的護水運動等等。
-
 隨著每個抗爭活動的調性不同，童智偉所支援的
 舞台也各自發展出美學，也有不少將危機化險為
 夷的經驗。例如當時為了反對美麗灣開發案的「不
@@ -125,7 +115,6 @@ YAMAHA「Powered Mixer」混音器作為第一台
 快進入狀況。也因此後來會有霹靂小組在清場前
 先搶走了喇叭，而消息傳出後，也有大批民眾相
 揪去中正一幫忙討回，堪稱「還我喇叭」運動。
-
 童智偉回顧自己一再為運動現場迅速提供物資基
 礎的背後，其實就是建構出一個權力結構，拿到
 麥克風的人即是焦點所在。當時在323行政院衝
@@ -176,4 +165,3 @@ YAMAHA「Powered Mixer」混音器作為第一台
 決定繼續堅持當一個「pure person」，也選擇在林
 強《千禧曼波》電影原聲帶中「單純的人」一曲
 結束對談。
-`
