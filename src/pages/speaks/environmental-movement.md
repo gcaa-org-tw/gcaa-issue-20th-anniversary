@@ -1,22 +1,13 @@
-import Avatar from '../../components/Avatar'
-import { Row } from 'react-bootstrap'
+---
+heading: 啟蒙與實踐
+subheading: 我們與台灣環境運動交會的生命軌跡
+title: 從80年代走來 林聖崇、林瓊華對談環運人生
+imgsrc: img/speaks/env-movement.jpg
+speakers:
+- 林聖崇
+- 林瓊華
+---
 
-export default function EnvironmentalMovement() {
-  return ({
-    title : `啟蒙與實踐`,
-    subtitle : `我們與台灣環境運動交會的生命軌跡`,
-    content : content,
-    speakers : speakers,
-    imgSrc : 'img/speaks/env-movement.jpg',
-  })
-}
-
-const speakers = (<Row>
-  <Avatar name="林聖崇" desc="資深環運人，生態保育聯盟總召集人" avatarUrl="img/avatar/s1_linsc.jpg"/>
-  <Avatar name="林瓊華" desc="國立台北藝術大學通識教育中心兼任助理教授，曾任綠色公民行動聯盟理事長" avatarUrl="img/avatar/s1_linch.jpg"/>
-</Row>)
-
-const content = `
 > 撰文／賴品瑀
 
 「每個人都是在一起學習，人生就是這樣學習過
@@ -118,7 +109,6 @@ const content = `
 這些深刻活過的人們只要認識過一兩個便足以改
 變人生，林瓊華表示，不只是他自己，後續也數
 次邀請他們到學校演講，學生也能感受到震撼。
-
 活躍於80年代的林聖崇、林瓊華兩人，人生方
 向都被環運、社運所改變。林瓊華大學畢業後一
 路進入前台北縣長尤清團隊，協助連結社運團體，
@@ -164,4 +154,3 @@ const content = `
 沒有出來，那麼公務員只會按照既有的法規走，
 不可能有讓人滿意的改變。因此，林聖崇仍期待
 台灣的公民意識能再提升。
-`

@@ -1,24 +1,14 @@
-import Avatar from '../../components/Avatar'
-import { Row } from 'react-bootstrap'
-
-export default function Sustainability() {
-  return ({
-    title : `2050臺灣想像`,
-    subtitle : `從環境正義到永續轉型`,
-    content : content,
-    speakers : speakers,
-    imgSrc : 'img/forum/forum-3.jpg',
-  })
-}
-
-const speakers = (<Row>
-  <Avatar name="趙家瑋" desc="綠色公民行動聯盟常務理事" avatarUrl="img/avatar/f3_chao.jpg"/>
-  <Avatar name="魏揚" desc="綠色公民行動聯盟研究員" avatarUrl="img/avatar/f3_wei.jpg"/>
-  <Avatar name="李易昆" desc="庶民發電學習社區合作社理事主席" avatarUrl="img/avatar/f3_lee.jpg"/>
-  <Avatar name="陳惠萍" desc="陽光伏特家共同創辦人" avatarUrl="img/avatar/f3_chen.jpg"/>
-</Row>)
-
-const content = `
+---
+heading: 2050臺灣想像
+subheading: 從環境正義到永續轉型
+title: 主題三：永續轉型的支持體系：從能源轉型到新發展想像
+imgsrc: img/forum/forum-3.jpg
+speakers:
+- 趙家瑋
+- 魏揚
+- 李易昆
+- 陳惠萍
+---
 > 撰文／劉如意
 
 「讓人有機會講話，比他講什麼話重要，這是社大
@@ -175,4 +165,3 @@ const content = `
 想像」場次中，我們看到四種不同在能源轉型過
 程中，與社會對話的方式以及更多可能的反省與
 發展想像的未來。
-`

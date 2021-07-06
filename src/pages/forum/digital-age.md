@@ -1,25 +1,14 @@
-import Avatar from '../../components/Avatar'
-import { Row } from 'react-bootstrap'
-
-export default function DigitalAge() {
-  return ({
-    title : `2050臺灣想像`,
-    subtitle : `從環境正義到永續轉型`,
-    content : content,
-    speakers : speakers,
-    imgSrc : 'img/forum/forum-2.jpg',
-  })
-}
-
-const speakers = (<Row>
-  <Avatar name="杜文苓" desc="政治大學公共行政系教授" avatarUrl="img/avatar/f2_tu.jpg"/>
-  <Avatar name="曾虹文" desc="綠色公民行動聯盟副秘書長" avatarUrl="img/avatar/f2_tseng.jpg"/>
-  <Avatar name="耿璐"   desc="開放文化基金會執行秘書" avatarUrl="img/avatar/f2_ken.jpg"/>
-  <Avatar name="林韋廷" desc="工業技術研究院綠能與環境研究所研究員" avatarUrl="img/avatar/f2_lin.jpg"/>
-</Row>)
-
-
-const content = `
+---
+heading: 2050臺灣想像
+subheading: 從環境正義到永續轉型
+title: 主題二：數位時代下的環境賦權：社會治理挑戰國家管理
+imgsrc: img/forum/forum-2.jpg
+speakers:
+- 杜文苓
+- 曾虹文
+- 耿璐
+- 林韋廷
+---
 > 撰文／陳震遠
 
 隨著數位時代的來臨，公民社會得到新的工具，
@@ -101,4 +90,3 @@ const content = `
 的特定工廠登記。這樣的案例說明，資訊的公開
 確實可以為民間與政府創造新的合作模式，共同
 為大眾關心的議題把關。
-`

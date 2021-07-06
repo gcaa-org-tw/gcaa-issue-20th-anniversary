@@ -1,22 +1,20 @@
 import React, { useEffect } from 'react'
 import { HashRouter, Switch, Route, Redirect, useLocation } from "react-router-dom";
 import { Container } from 'react-bootstrap';
-
-import Header from './components/Header';
-import Footer from './components/Footer';
-
-import Landing from './pages/Landing';
-import Speaks, { routesSpeaks } from './pages/Speaks';
-import Concert from './pages/Concert';
-import Exhibition from './pages/Exhibition';
-import Forums, { routesForums } from './pages/Forums';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import Speaks from './pages/Speaks'
+import Concert from './pages/Concert'
+import Exhibition from './pages/Exhibition'
+import Forums from './pages/Forums'
 
 const routes = [
   {
     path: "/speaks",
     title: '系列講座',
     component: Speaks,
-    routes: routesSpeaks,
+    // routes: routesSpeaks,
   },
   {
     path: "/concert",
@@ -32,9 +30,47 @@ const routes = [
     path: "/forum",
     title: '主題論壇',
     component: Forums,
-    routes: routesForums,
+    // routes: routesForums,
   },
 ];
+
+export default function App() {
+  return (
+    <div className="App">
+      <HashRouter>
+        <ScrollToTop />
+        <Switch>
+          {/* redirect /speak to page speak nr 1 */}
+          <Route exact path="/speaks">
+            <Redirect to="/speaks/environmental-movement" />
+          </Route>
+
+          {/* redirect /forum to page forum nr 1 */}
+          <Route exact path="/forum">
+            <Redirect to="/forum/outlook" />
+          </Route>
+
+          {/* all other routes except homepage */}
+          <Route path="/:path">
+            <Container>
+              <Header routes={routes} />
+              {routes.map((route, i) => (
+                <RouteWithSubRoutes key={i} {...route} />
+              ))}
+              {/*  */}
+            </Container>
+            <Footer />
+          </Route>
+
+          {/* homepage */}
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </HashRouter>
+    </div>
+  );
+}
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -44,36 +80,6 @@ function ScrollToTop() {
   }, [pathname]);
 
   return null;
-}
-
-export default function App() {
-  return (
-    <div>
-      <HashRouter>
-        <ScrollToTop/>
-        <Switch>
-          <Route exact path="/speaks">
-            <Redirect to="/speaks/environmental-movement" />
-          </Route>
-          <Route exact path="/forum">
-            <Redirect to="/forum/outlook" />
-          </Route>
-          <Route path="/:path">
-            <Container>
-              <Header routes={routes} />
-              {routes.map((route, i) => (
-                <RouteWithSubRoutes key={i} {...route} />
-              ))}
-            </Container>
-            <Footer />
-          </Route>
-          <Route path="/">
-            <Landing />
-          </Route>
-        </Switch>
-      </HashRouter>
-    </div>
-  );
 }
 
 function RouteWithSubRoutes(route) {

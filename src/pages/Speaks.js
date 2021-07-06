@@ -1,73 +1,73 @@
 import React from 'react'
 import { Switch, Route } from "react-router-dom";
-import PageContent from '../components/PageContent';
+import MarkdownPage from '../components/MarkdownPage';
 import Sidebar from '../components/Sidebar';
+import { attributes as attrEnvMovement, react as EnvMovement } from './speaks/environmental-movement.md'
+import { attributes as attrChangTC, react as ChangTC } from './speaks/chang-tse-chou.md'
+import { attributes as attrTamsuiRiver, react as TamsuiRiver } from './speaks/tamsui-river.md'
+import { attributes as attrSMxMusic, react as SMxMusic } from './speaks/social-movement-x-music.md'
+import { attributes as attrSocialMovements, react as SocialMovements } from './speaks/social-movements.md'
+import { attributes as attrSMxFilms, react as SMxFilms } from './speaks/social-movement-x-films.md'
 
-import EnvironmentalMovement from './speaks/EnvironmentalMovement'
-import ChangTseChou from './speaks/ChangTseChou'
-import TamSuiRiver from './speaks/TamSuiRiver'
-import SocialMovementXMusic from './speaks/SocialMovementXMusic';
-import SocialMovements from './speaks/SocialMovements';
-import SocialMovementXFilms from './speaks/SocialMovementXFilms';
-
-export const routesSpeaks = [
+export const routes = [
   {
     path: "/speaks/environmental-movement",
     itemId: 1,
-    title: '從80年代走來 林聖崇、林瓊華對談環運人生',
-    data: EnvironmentalMovement()
+    attr: attrEnvMovement,
+    data: EnvMovement,
   },
   {
     path: "/speaks/chang-tse-chou",
     itemId: 2,
-    title: '終身教育、終身學習 盼台灣素質提升 教授張則周再開講',
-    data: ChangTseChou()
+    attr: attrChangTC,
+    data: ChangTC,
   },
   {
     path: "/speaks/tamsui-river",
     itemId: 3,
-    title: '20年光陰找回淡水河清淨 盼河川串起國土計畫寬廣可能',
-    data: TamSuiRiver()
+    attr: attrTamsuiRiver,
+    data: TamsuiRiver,
   },
   {
     path: "/speaks/social-movement-x-music",
     itemId: 4,
-    title: '放大街頭的公義之聲：童智偉、吳志寧回顧社運烽火年代',
-    data: SocialMovementXMusic()
+    attr: attrSMxMusic,
+    data: SMxMusic,
   },
   {
     path: "/speaks/social-movements",
     itemId: 5,
-    title: '不只是湊人頭相挺 跨領域社運看見彼此 相扶持邁向未來',
-    data: SocialMovements()
+    attr: attrSocialMovements,
+    data: SocialMovements,
   },
   {
     path: "/speaks/social-movement-x-films",
     itemId: 6,
-    title: '從影像展現的社會視野 鄭有傑不服膺潛規則 我只能是我自己',
-    data: SocialMovementXFilms()
+    attr: attrSMxFilms,
+    data: SMxFilms,
   },
 ]
 
 export default function Speaks() {
   return (
     <Switch>
-      {routesSpeaks.map((route, index) => (
+      {routes.map((route, index) => (
         <Route
           key={index}
           path={route.path}
           exact={route.exact}
           children={
-            <PageContent
+            <MarkdownPage
+              attribute={route.attr}
               sidebar={
                 <Sidebar
                   title="系列講座"
-                  routes={routesSpeaks}
+                  routes={routes}
                 />
               }
-              page={route.data}
-              title={route.title}
-            />
+            >
+              <route.data />
+            </MarkdownPage>
           }
         />
       ))}

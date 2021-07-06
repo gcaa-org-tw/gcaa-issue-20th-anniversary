@@ -1,22 +1,12 @@
-import Avatar from '../../components/Avatar'
-import { Row } from 'react-bootstrap'
-
-export default function SocialMovementXFilms() {
-  return ({
-    title:  `社會運動的N次跨界`,
-    subtitle : `音樂人的搖滾社運路`,
-    content : content,
-    speakers : speakers,
-    imgSrc : 'img/speaks/social-movement-x-films.jpg',
-  })
-}
-
-const speakers = (<Row>
-  <Avatar name="鄭有傑" desc="導演、編劇、演員與製作人" avatarUrl="img/avatar/s6_cheng.jpg"/>
-  <Avatar name="林木材" desc="台灣國際紀錄片影展策展人" avatarUrl="img/avatar/s6_lin.jpg"/>
-</Row>)
-
-const content = `
+---
+heading:  社會運動的N次跨界
+subheading : 音樂人的搖滾社運路
+title: 從影像展現的社會視野 鄭有傑不服膺潛規則 我只能是我自己
+imgsrc: img/speaks/social-movement-x-films.jpg
+speakers:
+- 鄭有傑
+- 林木材
+---
 > 撰文／賴品瑀
 
 「我只能當我自己，也許是好一點的鄭有傑，但我
@@ -166,4 +156,3 @@ const content = `
 態了；他也認為市場也正在逐漸學習與改變，並
 非涉及少數族群的作品就沒市場，電影圈並不是
 非得要向潛規則低頭才行。
-`

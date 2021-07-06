@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ButtonDonation from './ButtonDonation'
 import { Container, Row, Col } from 'react-bootstrap'
 
-class CardCTA extends Component {
+export default class CardCTA extends Component {
   render() {
     return (
       <Container fluid className="p-2">
@@ -23,5 +23,3 @@ class CardCTA extends Component {
     )
   }
 }
-
-export default CardCTA

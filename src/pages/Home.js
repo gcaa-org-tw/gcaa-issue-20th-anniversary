@@ -10,7 +10,7 @@ const styleLanding = {
   overflow: 'hidden',
 }
 
-function Landing(props) {
+export default function Home(props) {
   return (
     <Route>
       <div style={ styleLanding }>
@@ -32,5 +32,3 @@ function Landing(props) {
     </Route>
   )
 }
-
-export default Landing

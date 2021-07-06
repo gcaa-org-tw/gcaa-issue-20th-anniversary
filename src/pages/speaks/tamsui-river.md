@@ -1,23 +1,14 @@
-import Avatar from '../../components/Avatar'
-import { Row } from 'react-bootstrap'
+---
+heading : ''
+subheading : 淡水河今昔變遷二十年
+title: 20年光陰找回淡水河清淨 盼河川串起國土計畫寬廣可能
+imgsrc : img/speaks/tamsui-river.jpg
+speakers :
+- 陳建志
+- 張岱屏
+- 李永展
+---
 
-export default function TamSuiRiver() {
-  return ({
-    title : ``,
-    subtitle : `淡水河今昔變遷二十年`,
-    content : content,
-    speakers : speakers,
-    imgSrc : 'img/speaks/tamsui-river.jpg',
-  })
-}
-
-const speakers = (<Row>
-  <Avatar name="陳建志" desc="前台灣永續聯盟秘書長、台灣綠色公民行動聯盟秘書長、理事" avatarUrl="img/avatar/s3_chen.jpg"/>
-  <Avatar name="張岱屏" desc="公共電視《我們的島》節目企劃" avatarUrl="img/avatar/s3_chang.jpg"/>
-  <Avatar name="李永展" desc="中華經濟研究院研究員" avatarUrl="img/avatar/s3_lee.jpg"/>
-</Row>)
-
-const content = `
 > 撰文／賴品瑀
 
 「每個人心裡都有個淡水河的故事。」為雙北都會
@@ -139,4 +130,3 @@ const content = `
 廣的可能性，例如關渡平原要選擇以城鄉發展區、
 農業發展區、國土保育區或是淡水河流域特定區
 域為發展計畫？有賴公民參與帶來更多元的討論。
-`
