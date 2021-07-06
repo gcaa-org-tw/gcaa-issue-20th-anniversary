@@ -45,7 +45,8 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",
-    "react-app-rewire-frontmatter-markdown": "^1.4.0"
+    "react-app-rewire-frontmatter-markdown": "^1.4.0",
+    "react-app-rewired": "^2.1.8"
   },
   "homepage": "https://gcaa-org-tw.github.io/gcaa-issue-20th-anniversary"
 }
