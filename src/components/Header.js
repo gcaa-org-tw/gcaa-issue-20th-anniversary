@@ -17,8 +17,13 @@ export default function Header(props) {
               <Nav.Link>{route.title}</Nav.Link>
             </LinkContainer>
           ))}
+          <div className="d-block d-sm-none">
+            <ButtonGCAA WithLove />
+          </div>
         </Navbar.Collapse>
-        <ButtonGCAA WithLove />
+        <div className="d-none d-sm-block">
+          <ButtonGCAA WithLove />
+        </div>
       </Container>
     </Navbar>
   )

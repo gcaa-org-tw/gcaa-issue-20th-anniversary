@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 export default class CardCTA extends Component {
   render() {
     return (
-      <Container fluid className="p-2">
+      <Container fluid className="p-5 p-sm-2">
         <Row className="align-items-center">
           <Col>
             <h3>陪伴綠盟走向下一個二十年</h3>
