@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap"
 import ImageGallery from 'react-image-gallery';
+import ButtonGCAA from "../components/ButtonGCAA";
 import CardCTA from "../components/CardCTA";
 import { react as ExhibitionMD } from './exhibition.md'
 
@@ -37,6 +38,27 @@ function Exhibition() {
       <Row className="justify-content-center align-items-center pt-4">
         <Col className="col-11 col-sm-8">
           <ExhibitionMD />
+        </Col>
+      </Row>
+      <Row className="justify-content-center align-items-center pt-4">
+        <Col className="col-11 col-sm-8">
+          <Container>
+            <Row className="justify-content-center align-items-center m-2">
+              <Col className="col-8">
+                <h5>綠盟20藝術展座談會</h5>
+                <h4>凝視自然之境：探索藝術與土地的匯流</h4>
+                <p>與談藝術家：王耀俊、胡棟民、楊忠銘、劉淑美<br />
+                   主持人：林瓊華（北藝大通識教育中心兼任助理教授）</p>
+              </Col>
+              <Col className="col-4">
+                <ButtonGCAA
+                  WithNav
+                  text="觀看講座錄影"
+                  href='https://www.youtube.com/watch?v=kBecDYoba0M&list=PLV4Jc0hvQg9HfVqzsSkJSYooBSiKe7usW&index=5'
+                />
+              </Col>
+            </Row>
+          </Container>
         </Col>
       </Row>
       <Row className="justify-content-center align-items-center">
