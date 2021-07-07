@@ -3,6 +3,7 @@ heading: 2050臺灣想像
 subheading: 從環境正義到永續轉型
 title: 主題一：共同前進－台灣環境運動的突圍與展望
 imgsrc: img/forum/forum-1.jpg
+recording: https://www.youtube.com/watch?v=T8F9DH7aiu4&list=PLV4Jc0hvQg9H-bix1jZ3fcYKC-o3UbMVR
 speakers:
 - 賴偉傑
 - 李根政

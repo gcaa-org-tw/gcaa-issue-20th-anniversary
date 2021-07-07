@@ -3,6 +3,7 @@ heading: 2050臺灣想像
 subheading: 從環境正義到永續轉型
 title: 主題二：數位時代下的環境賦權：社會治理挑戰國家管理
 imgsrc: img/forum/forum-2.jpg
+recording: https://www.youtube.com/watch?v=SNbUGw6S65I&list=PLV4Jc0hvQg9H-bix1jZ3fcYKC-o3UbMVR&index=2
 speakers:
 - 杜文苓
 - 曾虹文

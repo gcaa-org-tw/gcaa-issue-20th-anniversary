@@ -3,6 +3,7 @@ heading:  不只是環運
 subheading: 社運議題的交織與協力
 title: 不只是湊人頭相挺 跨領域社運看見彼此 相扶持邁向未來
 imgsrc: img/speaks/social-movements.jpg
+recording: https://www.youtube.com/watch?v=1kXORipe-Nw&list=PLV4Jc0hvQg9HfVqzsSkJSYooBSiKe7usW&index=6
 speakers:
 - 施逸翔
 - 周于萱

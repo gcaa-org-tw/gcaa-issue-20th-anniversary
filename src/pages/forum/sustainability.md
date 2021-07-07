@@ -3,6 +3,7 @@ heading: 2050臺灣想像
 subheading: 從環境正義到永續轉型
 title: 主題三：永續轉型的支持體系：從能源轉型到新發展想像
 imgsrc: img/forum/forum-3.jpg
+recording: https://www.youtube.com/watch?v=jv75DuHtt6k&list=PLV4Jc0hvQg9H-bix1jZ3fcYKC-o3UbMVR&index=3
 speakers:
 - 趙家瑋
 - 魏揚

@@ -3,6 +3,7 @@ heading : ''
 subheading : 淡水河今昔變遷二十年
 title: 20年光陰找回淡水河清淨 盼河川串起國土計畫寬廣可能
 imgsrc : img/speaks/tamsui-river.jpg
+recording: https://www.youtube.com/watch?v=R4MfvRHGzQo&list=PLV4Jc0hvQg9HfVqzsSkJSYooBSiKe7usW
 speakers :
 - 陳建志
 - 張岱屏

@@ -3,6 +3,7 @@ heading: 啟蒙與實踐
 subheading: 我們與台灣環境運動交會的生命軌跡
 title: 從80年代走來 林聖崇、林瓊華對談環運人生
 imgsrc: img/speaks/env-movement.jpg
+recording: https://www.youtube.com/watch?v=94_CbNu_Mq4&list=PLV4Jc0hvQg9HfVqzsSkJSYooBSiKe7usW&index=3
 speakers:
 - 林聖崇
 - 林瓊華
