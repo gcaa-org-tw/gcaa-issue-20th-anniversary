@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import ButtonDonation from "./ButtonDonation";
+import ButtonGCAA from "./ButtonGCAA";
 
 export default function Header(props) {
   return (
@@ -18,7 +18,7 @@ export default function Header(props) {
             </LinkContainer>
           ))}
         </Navbar.Collapse>
-        <ButtonDonation WithLove />
+        <ButtonGCAA WithLove />
       </Container>
     </Navbar>
   )

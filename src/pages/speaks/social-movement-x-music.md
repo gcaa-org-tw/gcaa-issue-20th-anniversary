@@ -3,6 +3,7 @@ heading:  社會運動的N次跨界
 subheading: 音樂人的搖滾社運路
 title: 放大街頭的公義之聲：童智偉、吳志寧回顧社運烽火年代
 imgsrc: img/speaks/social-movement-x-music.jpg
+recording: https://www.youtube.com/watch?v=2qcTQpFIDkU&list=PLV4Jc0hvQg9HfVqzsSkJSYooBSiKe7usW&index=4
 speakers:
 - 童智偉
 - 吳志寧

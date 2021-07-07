@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ButtonDonation from './ButtonDonation'
+import ButtonGCAA from './ButtonGCAA'
 import { Container, Row, Col } from 'react-bootstrap'
 
 export default class CardCTA extends Component {
@@ -9,7 +9,7 @@ export default class CardCTA extends Component {
         <Row className="align-items-center">
           <Col>
             <h3>陪伴綠盟走向下一個二十年</h3>
-            <ButtonDonation WithNav/>
+            <ButtonGCAA WithNav/>
           </Col>
           <Col>
             <img

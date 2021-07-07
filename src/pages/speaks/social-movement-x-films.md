@@ -3,6 +3,7 @@ heading:  社會運動的N次跨界
 subheading : 音樂人的搖滾社運路
 title: 從影像展現的社會視野 鄭有傑不服膺潛規則 我只能是我自己
 imgsrc: img/speaks/social-movement-x-films.jpg
+recording: https://www.youtube.com/watch?v=Ymm5S_GVcBs&list=PLV4Jc0hvQg9HfVqzsSkJSYooBSiKe7usW&index=7
 speakers:
 - 鄭有傑
 - 林木材

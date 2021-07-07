@@ -2,6 +2,7 @@ import React  from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Avatar from './Avatar';
 import CardCTA from './CardCTA';
+import ButtonGCAA from './ButtonGCAA';
 
 const speakerData = require('../pages/speaker-data.json')
 
@@ -48,6 +49,21 @@ export default function MarkdownPage(props) {
         <Col className="col-6 col-md-3 col-lg-2 order-lg-last order-first">
           {/* right sidebar */}
           <div class="sticky-sidebar">
+            <Container fluid className="p-2">
+              <Row className="align-items-center pb-2">
+                <Col className="mx-auto text-center">
+                  <ButtonGCAA WithNav
+                    text="觀看講座錄影"
+                    href={attr.recording}
+                  />
+                </Col>
+              </Row>
+            </Container>
+            <Row>
+              <Col className="mx-auto p-1 text-center">
+                <h3>與談人</h3>
+              </Col>
+            </Row>
             <Row>
             {speakers.map((e) =>
               <Avatar

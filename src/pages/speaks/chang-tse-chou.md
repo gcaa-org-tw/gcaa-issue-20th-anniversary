@@ -3,6 +3,7 @@ heading:  如何從草根中學習？
 subheading: 公益、生態、社會的漫長追尋
 title: 終身教育、終身學習 盼台灣素質提升 教授張則周再開講
 imgsrc: img/speaks/chang-tc.jpg
+recording: https://www.youtube.com/watch?v=nEsf4OzmOnA&list=PLV4Jc0hvQg9HfVqzsSkJSYooBSiKe7usW&index=2
 speakers:
 - 張則周
 ---
