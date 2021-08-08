@@ -30,8 +30,7 @@ function Exhibition() {
     <Container className="my-5">
       <Row className="justify-content-center align-items-center">
         <Col className="col-11 col-sm-8 text-center">
-          <h1>藝術與土地的匯流</h1>
-          <h2>綠盟20藝術公益聯展</h2>
+          <h1>綠盟20藝術公益聯展</h1>
         </Col>
       </Row>
       <ImageGallery items={data} />
@@ -48,7 +47,7 @@ function Exhibition() {
                 <h5>綠盟20藝術展座談會</h5>
                 <h4>凝視自然之境：探索藝術與土地的匯流</h4>
                 <p>與談藝術家：王耀俊、胡棟民、楊忠銘、劉淑美<br />
-                   主持人：林瓊華（北藝大通識教育中心兼任助理教授）</p>
+                   主持人：林瓊華（綠色公民行動聯盟常務理事、國立台北藝術大學通識教育中心兼任助理教授）</p>
               </Col>
               <Col className="col-4">
                 <ButtonGCAA
