@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gcaa-issue-20th-anniversary/static/css/main.517bcc50.chunk.css",
-    "main.js": "/gcaa-issue-20th-anniversary/static/js/main.240bd768.chunk.js",
-    "main.js.map": "/gcaa-issue-20th-anniversary/static/js/main.240bd768.chunk.js.map",
+    "main.js": "/gcaa-issue-20th-anniversary/static/js/main.433376c2.chunk.js",
+    "main.js.map": "/gcaa-issue-20th-anniversary/static/js/main.433376c2.chunk.js.map",
     "runtime-main.js": "/gcaa-issue-20th-anniversary/static/js/runtime-main.8255ee16.js",
     "runtime-main.js.map": "/gcaa-issue-20th-anniversary/static/js/runtime-main.8255ee16.js.map",
     "static/js/2.23e752a0.chunk.js": "/gcaa-issue-20th-anniversary/static/js/2.23e752a0.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8255ee16.js",
     "static/js/2.23e752a0.chunk.js",
     "static/css/main.517bcc50.chunk.css",
-    "static/js/main.240bd768.chunk.js"
+    "static/js/main.433376c2.chunk.js"
   ]
 }
