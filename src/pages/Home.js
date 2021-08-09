@@ -22,6 +22,7 @@ export default function Home(props) {
                 textDecoration: 'none',
                 fontWeight: '700',
                 textShadow: '0 1px 1px rgba(0,0,0,.6)',
+                fontSize: '3.5rem',
               }}>
                 綠盟二十週年特刊
               </h1>
