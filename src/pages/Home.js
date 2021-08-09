@@ -15,7 +15,7 @@ export default function Home(props) {
     <Route>
       <div style={ styleLanding }>
           <Container fluid className="vh-100 align-middle">
-            <NavLink to={`/speaks`} style={{ textDecoration: 'none' }}>
+            <NavLink to={`/about`} style={{ textDecoration: 'none' }}>
             <Row className="vh-100 align-items-center text-center">
               <h1 style={{
                 color: 'white',

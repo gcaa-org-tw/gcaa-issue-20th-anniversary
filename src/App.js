@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import About from './pages/About';
 import Speaks from './pages/Speaks'
 import Concert from './pages/Concert'
 import Exhibition from './pages/Exhibition'
@@ -11,10 +12,14 @@ import Forums from './pages/Forums'
 
 const routes = [
   {
+    path: "/about",
+    title: '關於綠盟',
+    component: About,
+  },
+  {
     path: "/speaks",
     title: '系列講座',
     component: Speaks,
-    // routes: routesSpeaks,
   },
   {
     path: "/concert",
@@ -30,7 +35,6 @@ const routes = [
     path: "/forum",
     title: '主題論壇',
     component: Forums,
-    // routes: routesForums,
   },
 ];
 
