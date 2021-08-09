@@ -34,35 +34,37 @@ function Exhibition() {
         </Col>
       </Row>
       <ImageGallery items={data} />
-      <Row className="justify-content-center align-items-center pt-4">
-        <Col className="col-11 col-sm-8">
-          <ExhibitionMD />
+      <Row className="justify-content-center justify-content-md-evenly pt-4">
+        <Col className="col-8 col-md-6 col-lg-2 order-lg-first order-last">
+          <div class="sticky-sidebar">
+            <Container fluid className="p-2">
+                <Row className="align-items-center pb-2">
+                  <Col className="mx-auto">
+                    <h6>綠盟20藝術展座談會</h6>
+                    <h5>凝視自然之境：探索藝術與土地的匯流</h5>
+                    <p>與談藝術家：王耀俊、胡棟民、楊忠銘、劉淑美</p>
+                    <p>主持人：林瓊華<small>（綠色公民行動聯盟常務理事、國立台北藝術大學通識教育中心兼任助理教授）</small></p>
+                    <div className="pt-1">
+                      <ButtonGCAA
+                        WithNav
+                        text="觀看講座錄影"
+                        href='https://www.youtube.com/watch?v=kBecDYoba0M&list=PLV4Jc0hvQg9HfVqzsSkJSYooBSiKe7usW&index=5'
+                      />
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+          </div>
         </Col>
-      </Row>
-      <Row className="justify-content-center align-items-center pt-4">
-        <Col className="col-11 col-sm-8">
-          <Container>
-            <Row className="justify-content-center align-items-center m-2">
-              <Col className="col-8">
-                <h5>綠盟20藝術展座談會</h5>
-                <h4>凝視自然之境：探索藝術與土地的匯流</h4>
-                <p>與談藝術家：王耀俊、胡棟民、楊忠銘、劉淑美<br />
-                   主持人：林瓊華（綠色公民行動聯盟常務理事、國立台北藝術大學通識教育中心兼任助理教授）</p>
-              </Col>
-              <Col className="col-4">
-                <ButtonGCAA
-                  WithNav
-                  text="觀看講座錄影"
-                  href='https://www.youtube.com/watch?v=kBecDYoba0M&list=PLV4Jc0hvQg9HfVqzsSkJSYooBSiKe7usW&index=5'
-                />
-              </Col>
-            </Row>
-          </Container>
-        </Col>
-      </Row>
-      <Row className="justify-content-center align-items-center">
-        <Col className="col-11 col-md-8 col-lg-6">
-          <CardCTA />
+        <Col className="col-10 col-md-8 col-lg-9">
+          <Row>
+            <ExhibitionMD />
+          </Row>
+          <Row className="justify-content-center align-items-center pt-4">
+            <Col className="col-11 col-md-8 col-lg-8">
+              <CardCTA />
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>
