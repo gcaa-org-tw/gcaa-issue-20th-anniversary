@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/gcaa-issue-20th-anniversary/static/css/main.517bcc50.chunk.css",
-    "main.js": "/gcaa-issue-20th-anniversary/static/js/main.2af4b222.chunk.js",
-    "main.js.map": "/gcaa-issue-20th-anniversary/static/js/main.2af4b222.chunk.js.map",
-    "runtime-main.js": "/gcaa-issue-20th-anniversary/static/js/runtime-main.d6898800.js",
-    "runtime-main.js.map": "/gcaa-issue-20th-anniversary/static/js/runtime-main.d6898800.js.map",
-    "static/js/2.9345f37f.chunk.js": "/gcaa-issue-20th-anniversary/static/js/2.9345f37f.chunk.js",
-    "static/js/2.9345f37f.chunk.js.map": "/gcaa-issue-20th-anniversary/static/js/2.9345f37f.chunk.js.map",
-    "static/js/3.1a5d306d.chunk.js": "/gcaa-issue-20th-anniversary/static/js/3.1a5d306d.chunk.js",
-    "static/js/3.1a5d306d.chunk.js.map": "/gcaa-issue-20th-anniversary/static/js/3.1a5d306d.chunk.js.map",
+    "main.js": "/gcaa-issue-20th-anniversary/static/js/main.0e9620e9.chunk.js",
+    "main.js.map": "/gcaa-issue-20th-anniversary/static/js/main.0e9620e9.chunk.js.map",
+    "runtime-main.js": "/gcaa-issue-20th-anniversary/static/js/runtime-main.fe374898.js",
+    "runtime-main.js.map": "/gcaa-issue-20th-anniversary/static/js/runtime-main.fe374898.js.map",
+    "static/js/2.c6208df5.chunk.js": "/gcaa-issue-20th-anniversary/static/js/2.c6208df5.chunk.js",
+    "static/js/2.c6208df5.chunk.js.map": "/gcaa-issue-20th-anniversary/static/js/2.c6208df5.chunk.js.map",
+    "static/js/3.67f05d6f.chunk.js": "/gcaa-issue-20th-anniversary/static/js/3.67f05d6f.chunk.js",
+    "static/js/3.67f05d6f.chunk.js.map": "/gcaa-issue-20th-anniversary/static/js/3.67f05d6f.chunk.js.map",
     "index.html": "/gcaa-issue-20th-anniversary/index.html",
     "static/css/main.517bcc50.chunk.css.map": "/gcaa-issue-20th-anniversary/static/css/main.517bcc50.chunk.css.map",
-    "static/js/2.9345f37f.chunk.js.LICENSE.txt": "/gcaa-issue-20th-anniversary/static/js/2.9345f37f.chunk.js.LICENSE.txt"
+    "static/js/2.c6208df5.chunk.js.LICENSE.txt": "/gcaa-issue-20th-anniversary/static/js/2.c6208df5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d6898800.js",
-    "static/js/2.9345f37f.chunk.js",
+    "static/js/runtime-main.fe374898.js",
+    "static/js/2.c6208df5.chunk.js",
     "static/css/main.517bcc50.chunk.css",
-    "static/js/main.2af4b222.chunk.js"
+    "static/js/main.0e9620e9.chunk.js"
   ]
 }
