@@ -9,6 +9,8 @@ import Speaks from './pages/Speaks'
 import Concert from './pages/Concert'
 import Exhibition from './pages/Exhibition'
 import Forums from './pages/Forums'
+import HuiMin from './pages/HuiMin';
+import Epilogue from './pages/Epilogue';
 
 const routes = [
   {
@@ -35,6 +37,16 @@ const routes = [
     path: "/forum",
     title: '主題論壇',
     component: Forums,
+  },
+  {
+    path: "/hui-min",
+    title: '紀念劉惠敏',
+    component: HuiMin,
+  },
+  {
+    path: "/epilogue",
+    title: '秘書長的話',
+    component: Epilogue,
   },
 ];
 
